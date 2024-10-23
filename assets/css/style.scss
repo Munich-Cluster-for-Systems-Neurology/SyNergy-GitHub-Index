@@ -5,13 +5,13 @@
 
 /* Custom styles */
 
-.site-title {
-    display: none; /* Hides the title from view */
+h1 a {
+    display: none;
 }
 
 /* Add padding for the logo */
 img[src="/SyNergy-GitHub-Index/assets/img/logo.png"] {
-    padding: 100px; /* Adjust this value as needed */
+    padding-bottom: 100px; /* Adjust this value as needed */
 }
 
 /* Change heading color */
