@@ -4,9 +4,8 @@ plugins:
 
 gem "github-pages", group: :jekyll_plugins
 
-title: [Welcome to the Munich Cluster for Systems Neurology (SyNergy) GitHub page!]
 description: |
-    Using systems neurology as a new interdisciplinary approach, SyNergy researchers 
+                                                                    Using systems neurology as a new interdisciplinary approach, SyNergy researchers 
     investigate the shared disease mechanisms of neurovascular, neurodegenerative, 
     and neuroimmunological diseases, and on this basis develop novel diagnostic and 
     therapeutic approaches. 
