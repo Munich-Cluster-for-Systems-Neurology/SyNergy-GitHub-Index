@@ -2,25 +2,6 @@
 ---
 
 @import "{{ site.theme }}";
-h1 {
-    color: #4a9476; /* Change this to your desired color */
-}
-h2 {
-    color: #4a9476; /* Change this to your desired color */
-}
-
-h3 {
-    color: #4a9476; /* Change this to your desired color */
-}
-
-h4 {
-    color: #4a9476; /* Change this to your desired color */
-}
-
-h5 {
-    color: #4a9476; /* Change this to your desired color */
-}
-
-h6 {
-    color: #4a9476; /* Change this to your desired color */
+h1, h2, h3, h4, h5, h6 {
+    color: #4a9476;
 }
