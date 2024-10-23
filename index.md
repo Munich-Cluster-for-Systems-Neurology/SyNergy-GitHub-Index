@@ -2,6 +2,8 @@
 
 Here you can explore associated GitHub repositories for published projects from SyNergy, and links to their respective PubMed articles.
 
+_For more information on our research and publications, visit [our website](https://synergy-munich.de/)_
+
 
 ## Transcriptomics Projects
 ---
