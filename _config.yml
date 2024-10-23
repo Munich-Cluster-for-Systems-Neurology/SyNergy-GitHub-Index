@@ -4,5 +4,4 @@ plugins:
 
 gem "github-pages", group: :jekyll_plugins
 
-title: [Index of SyNergy’ Published GitHub Repositories]
-description: [Welcome to the Munich Cluster for Systems Neurology (SyNergy) GitHub page!]
+title: [Welcome to the Munich Cluster for Systems Neurology (SyNergy) GitHub page!]
