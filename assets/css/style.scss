@@ -1,0 +1,9 @@
+---
+---
+
+@import "{{ site.theme }}"; /* This imports the theme's styles */
+
+/* Custom styles go here */
+h1, h2 {
+    color: #4a9476; /* Your desired color */
+}

@@ -1,9 +1,0 @@
----
----
-
-/* Custom styles */
-h1, h2 {
-    color: #4a9476 !important; /* Change heading color */
-}
-
-@import "{{ site.theme }}";
