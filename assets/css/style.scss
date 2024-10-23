@@ -1,12 +1,26 @@
 ---
 ---
 
-$heading-color: #4a9476; /* Setting a new value for the variable */
-
-/* Now when the theme imports, it will use your custom variable */
-@import "{{ site.theme }}"; /* Imports the theme styles with your custom variable */
+@import "{{ site.theme }}"; /* Import the theme styles */
 
 /* Custom styles */
+
+/* Change heading color */
 h1, h2 {
-    color: $heading-color; /* This will use the variable you've set */
+    color: #4a9476; /* Replace with your desired heading color */
+}
+
+/* Change site title color */
+h1.site-title {
+    color: #2c5444; /* Replace with your desired site title color */
+}
+
+/* Change link color */
+a {
+    color: #4a9476; /* Replace with your desired link color */
+}
+
+/* Optional: Change link color on hover */
+a:hover {
+    color: #2c5444; /* Replace with your desired hover color */
 }
