@@ -1,9 +1,12 @@
 ---
 ---
 
-@import "{{ site.theme }}"; /* This imports the theme's styles */
+$heading-color: #4a9476; /* Setting a new value for the variable */
 
-/* Custom styles go here */
+/* Now when the theme imports, it will use your custom variable */
+@import "{{ site.theme }}"; /* Imports the theme styles with your custom variable */
+
+/* Custom styles */
 h1, h2 {
-    color: #4a9476; /* Your desired color */
+    color: $heading-color; /* This will use the variable you've set */
 }
