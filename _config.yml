@@ -1,0 +1,9 @@
+remote_theme: pages-themes/minimal@v0.2.0
+plugins: - jekyll-remote-theme # add this line to the plugins list if you already have one
+
+gem "github-pages", group: :jekyll_plugins
+
+title: [Index of SyNergy’ Published GitHub Repositories]
+description: [Welcome to the Munich Cluster for Systems Neurology (SyNergy) GitHub page!
+
+Here you can explore associated GitHub repositories for published projects from SyNergy, and links to their respective PubMed articles.]
