@@ -60,3 +60,37 @@ _For more information on our research and publications, visit [our website](http
 - **GitHub Repository**: [scRNA-seq analysis](https://github.com/Lieszlab/Benakis-et-al.-2022-eLife)
 
 ---
+
+
+## Proteomics Projects
+---
+
+### **Defining the Adult Neural Stem Cell Niche Proteome Identifies Key Regulators of Adult Neurogenesis**
+- [PubMed Article](https://pubmed.ncbi.nlm.nih.gov/32032526/)
+- **GitHub Repository**: [MATLAB scripts to analyze AFM data](https://github.com/FranzeLab)
+
+---
+
+### **Mapping autophagosome contents identifies interleukin-7 receptor-alpha as a key cargo modulating CD4+ T cell proliferation**
+- [PubMed Article](https://pubmed.ncbi.nlm.nih.gov/36055998/)
+- **GitHub Repository**: [Mass spectrometry data analysis](https://github.com/dzhou93/proximity_labelling_pipeline/commit/2e825476556087ae0cff51310556adb278a83d77)
+
+---
+
+### **Met/HGFR triggers detrimental reactive microglia in TBI**
+- [PubMed Article](https://pubmed.ncbi.nlm.nih.gov/36577378/)
+- **GitHub Repository**: [PROTEAS: Protein microarray expression analysis](https://github.com/Rida-Rehman/PROTEAS)
+
+---
+
+### **Proteomic and lipidomic profiling of demyelinating lesions identifies fatty acids as modulators in lesion recovery**
+- [PubMed Article](https://pubmed.ncbi.nlm.nih.gov/34706241/)
+- **GitHub Repository**: [Code for calculating the lesion volume](https://github.com/lenkavaculciakova/lesion_volume)
+
+---
+
+### **Targeting the TCA cycle can ameliorate widespread axonal energy deficiency in neuroinflammatory lesions**
+- [PubMed Article](https://pubmed.ncbi.nlm.nih.gov/37430025/)
+- **GitHub Repository**: [Python algorithm for the analysis of the EAE mitochondrial proteome](https://github.com/engelsdaniel/mitoproteomics)
+
+---
