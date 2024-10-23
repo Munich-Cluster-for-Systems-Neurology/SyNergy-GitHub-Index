@@ -35,17 +35,17 @@ For more information on our research and publications, visit [our website](https
 ### **Phagocyte-mediated synapse removal in cortical neuroinflammation is promoted by local calcium accumulation**
 - [PubMed Article](https://pubmed.ncbi.nlm.nih.gov/33495636/)
 - **GitHub Repositories**:
-  1. [Code and sample data used for parts of the analysis in the paper Jafari et al 2020](https://github.com/portugueslab/Jafari-et-al-2020)
-  2. [Re-analysis of snRNA-seq data from Schirmer et al., Nature, 2019](https://github.com/engelsdaniel/schirmer_reanalyzed)
+  - [Code and sample data used for parts of the analysis in the paper Jafari et al 2020](https://github.com/portugueslab/Jafari-et-al-2020)
+  - [Re-analysis of snRNA-seq data from Schirmer et al., Nature, 2019](https://github.com/engelsdaniel/schirmer_reanalyzed)
 
 ---
 
 ### **Shared inflammatory glial cell signature after stab wound injury, revealed by spatial, temporal, and cell-type-specific profiling of the murine cerebral cortex**
 - [PubMed Article](https://pubmed.ncbi.nlm.nih.gov/38570482/)
 - **GitHub Repositories**:
-  1. [Analysis pipeline for scRNA-seq/stRNA-seq](https://github.com/NinkovicLab/Koupourtidou-Schwarz-et-al)
-  2. [Microglia morphology quantification tool (MMQT)](https://github.com/isdneuroimaging/mmqt)
-  3. [Spatial gradient analysis](https://github.com/simonmfr/SPATA2/tree/publicationCK)
+  - [Analysis pipeline for scRNA-seq/stRNA-seq](https://github.com/NinkovicLab/Koupourtidou-Schwarz-et-al)
+  - [Microglia morphology quantification tool (MMQT)](https://github.com/isdneuroimaging/mmqt)
+  - [Spatial gradient analysis](https://github.com/simonmfr/SPATA2/tree/publicationCK)
 
 ---
 
