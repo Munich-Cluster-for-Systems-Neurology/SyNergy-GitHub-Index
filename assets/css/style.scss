@@ -5,6 +5,10 @@
 
 /* Custom styles */
 
+.site-title {
+    display: none; /* Hides the title from view */
+}
+
 /* Add padding for the logo */
 img[src="/assets/img/logo.png"] {
     padding: 100px; /* Adjust this value as needed */
