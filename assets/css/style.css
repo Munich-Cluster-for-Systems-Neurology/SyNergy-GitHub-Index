@@ -1,0 +1,8 @@
+---
+---
+
+@import "{{ site.theme }}";
+/* Change the font color of all heading levels */
+h1 {
+    color: #4A9476; /* Change this to your desired color */
+}
