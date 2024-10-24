@@ -56,29 +56,36 @@ section a {
     color: #4a9476;   /* Changes the color of paragraphs within this section */
 }
 
-/* Style for the main dropdown title */
+/* Style for the dropdown summary */
 details > summary {
   cursor: pointer;
-  font-size: 1.5em;
-  color: #4a9476; /* You can match this with the existing color scheme */
+  /* You can add specific styles here for the dropdown title if needed */
 }
 
-/* Keep the existing styles for list items, no need to redefine */
+/* Ensure the list items inherit existing styles for your text */
 details ul {
-  list-style-type: none; /* or use your existing list style */
-  padding-left: 20px;
+  list-style: none;  /* Remove default list styling */
+  padding-left: 0;   /* Remove left padding */
+  margin-top: 10px;  /* Add space between the summary and the list */
 }
 
-/* Existing styles for images and text within the list will apply automatically */
-details img {
-  /* No need to add width/height if you want to maintain the original styling */
+details ul li {
+  margin-bottom: 20px; /* Space between projects */
 }
 
-/* No changes for project titles if you want them to inherit existing styles */
-details > ul > li > details > summary {
-  cursor: pointer;
-  font-size: inherit; /* Keep the font size consistent */
-  margin-bottom: inherit; /* Keep existing margins */
+/* Style for the images in the list items */
+details ul li img {
+  /* No change in thumbnail style settings */
+}
+
+/* Link styles for the repository links */
+details ul li a {
+  /* Keep link color and style from the existing settings */
+}
+
+/* Hover and focus state for the links */
+details ul li a:hover, details ul li a:focus {
+  /* Keep existing hover effects if any */
 }
 
 header {
