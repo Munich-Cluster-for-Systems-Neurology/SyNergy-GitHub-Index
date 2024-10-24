@@ -12,7 +12,7 @@ _For more information on our research and publications, visit [the SyNergy websi
 ---
 
 ### **Adult neural stem cell activation in mice is regulated by the day/night cycle and intracellular calcium dynamics**
-- [PubMed Article](https://pubmed.ncbi.nlm.nih.gov/33482084/)
+- [![Alt text](assets/img/thumbnails/t1.png)](https://pubmed.ncbi.nlm.nih.gov/33482084/)
 - **GitHub Repository**: [Code for analysis of Ca2+ activity in neural stem cells](https://github.com/SaghatelyanLab/Calcium_analysis_in_NSC)
 
 ---
