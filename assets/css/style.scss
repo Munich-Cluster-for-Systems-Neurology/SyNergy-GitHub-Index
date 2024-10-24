@@ -46,6 +46,11 @@ section a {
     color: #4a9476;   /* Changes the color of paragraphs within this section */
 }
 
+header {
+  padding: 20px;
+  margin-left: -50px;
+}
+
 /* Add padding for the logo */
 img[src="/SyNergy-GitHub-Index/assets/img/logo.png"] {
     max-width: 150%;
