@@ -234,3 +234,11 @@ _For more information on our research and publications, visit [the SyNergy websi
   </ul>
   <hr>
 </details>
+
+---
+
+<details>
+  <summary>
+    <h2><span class="arrow">&#9654;</span> Tutorials/Additional Resources</h2>
+  </summary>
+</details>
