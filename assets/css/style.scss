@@ -17,8 +17,9 @@ body {
   font-weight:400;
 }
 
-strong {
+section {
   background-color: #fff;
+  padding: 50px;
 }
 
 /* Add padding for the logo */
@@ -30,8 +31,8 @@ img[src="/SyNergy-GitHub-Index/assets/img/logo.png"] {
 }
 
 /* Change heading color */
-h1, h2, h3, h4 {
-    color: #fff;  /* Replace with your desired heading color */
+h1, h2 {
+    color: #4a9476;  /* Replace with your desired heading color */
 }
 
 /*
