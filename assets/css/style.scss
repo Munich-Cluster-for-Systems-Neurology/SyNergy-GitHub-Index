@@ -46,15 +46,19 @@ section a {
     color: #4a9476;   /* Changes the color of paragraphs within this section */
 }
 
+/* Add padding for the logo */
+img[src="/SyNergy-GitHub-Index/assets/img/logo.png"] {
+    max-width: 150%;
+    background-color: #e5e5e5;
+    display: inline-block; 
+}
+
 header {
     text-align: right;   /* Aligns the image to the right */
 }
 
-/* Add padding for the logo */
-img[src="/SyNergy-GitHub-Index/assets/img/logo.png"] {
-    padding-bottom: 100px;  /* Adjust this value as needed */
-    max-width: 150%;
-    background-color: #e5e5e5;
+header p {
+    padding-top: 100px;  /* Adjust this value as needed */
 }
 
 /* Change heading color */
