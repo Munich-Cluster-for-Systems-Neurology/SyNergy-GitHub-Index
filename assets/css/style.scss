@@ -20,8 +20,8 @@ body {
 section {
   background-color: #e5e5e5;
   padding: 20px;
-  width: 100%;
-  margin-right: -250px; 
+  width: 110%;
+  margin-right: -275px; 
 }
 
 section p {
@@ -62,6 +62,10 @@ img[src="/SyNergy-GitHub-Index/assets/img/logo.png"] {
 header p {
     padding-top: 100px;  /* Adjust this value as needed */
     width: 405px;
+}
+
+header p.view {
+    display: none;
 }
 
 /* Change heading color */
