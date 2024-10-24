@@ -1,6 +1,6 @@
 # Index of GitHub Repositories
 
-Here you can explore associated GitHub repositories for published projects from SyNergy, and links to their respective PubMed articles.
+Here you can explore GitHub repositories associated with SyNergy projects, and links to their related publications.
 
 _For more information on our research and publications, visit [the SyNergy website](https://synergy-munich.de/)._
 
