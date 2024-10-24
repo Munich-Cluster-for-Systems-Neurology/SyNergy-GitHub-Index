@@ -62,32 +62,6 @@ details > summary {
   /* You can add specific styles here for the dropdown title if needed */
 }
 
-/* Ensure the list items inherit existing styles for your text */
-details ul {
-  list-style: none;  /* Remove default list styling */
-  padding-left: 0;   /* Remove left padding */
-  margin-top: 10px;  /* Add space between the summary and the list */
-}
-
-details ul li {
-  margin-bottom: 20px; /* Space between projects */
-}
-
-/* Style for the images in the list items */
-details ul li img {
-  /* No change in thumbnail style settings */
-}
-
-/* Link styles for the repository links */
-details ul li a {
-  /* Keep link color and style from the existing settings */
-}
-
-/* Hover and focus state for the links */
-details ul li a:hover, details ul li a:focus {
-  /* Keep existing hover effects if any */
-}
-
 header {
     margin-left: -360px;
     margin-top: -20px;
