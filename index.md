@@ -6,9 +6,7 @@ _For more information on our research and publications, visit [the SyNergy websi
 
 ---
 
-## <details>
-  <summary><strong>Transcriptomics Projects</strong></summary>
-
+## <Transcriptomics Projects>
   <ul>
     <li>
       <details>
@@ -26,7 +24,7 @@ _For more information on our research and publications, visit [the SyNergy websi
       </details>
     </li>
   </ul>
-</details>
+</Transcriptomics Projects>
 
 
 ## Transcriptomics Projects
