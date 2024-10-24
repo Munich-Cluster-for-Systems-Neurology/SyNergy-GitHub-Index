@@ -28,6 +28,10 @@ section p {
     color: #3e4a45;   /* Changes the color of paragraphs within this section */
 }
 
+section p.img {
+    float: right;
+}
+
 section li::marker {
     color: #3e4a45;   /* Changes the color of paragraphs within this section */
 }
