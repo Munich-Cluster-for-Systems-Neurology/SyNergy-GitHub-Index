@@ -56,6 +56,31 @@ section a {
     color: #4a9476;   /* Changes the color of paragraphs within this section */
 }
 
+/* Style for the main dropdown title */
+details > summary {
+  cursor: pointer;
+  font-size: 1.5em;
+  color: #4a9476; /* You can match this with the existing color scheme */
+}
+
+/* Keep the existing styles for list items, no need to redefine */
+details ul {
+  list-style-type: none; /* or use your existing list style */
+  padding-left: 20px;
+}
+
+/* Existing styles for images and text within the list will apply automatically */
+details img {
+  /* No need to add width/height if you want to maintain the original styling */
+}
+
+/* No changes for project titles if you want them to inherit existing styles */
+details > ul > li > details > summary {
+  cursor: pointer;
+  font-size: inherit; /* Keep the font size consistent */
+  margin-bottom: inherit; /* Keep existing margins */
+}
+
 header {
     margin-left: -360px;
     margin-top: -20px;
