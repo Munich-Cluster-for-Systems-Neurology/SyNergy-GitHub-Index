@@ -24,13 +24,13 @@ _For more information on our research and publications, visit [the SyNergy websi
 ---
 
 ### **Parkinson's disease motor symptoms rescue by CRISPRa‐reprogramming astrocytes into GABAergic neurons**
-- [PubMed Article](https://pubmed.ncbi.nlm.nih.gov/35373464/)
+[![Alt text](assets/img/thumbnails/t3.png)](https://www.embopress.org/doi/full/10.15252/emmm.202114797)
 - **GitHub Repository**: [Astrocytes reprogramming analysis](https://github.com/theislab/astrocytes_reprogramming_analysis)
 
 ---
 
 ### **Phagocyte-mediated synapse removal in cortical neuroinflammation is promoted by local calcium accumulation**
-- [PubMed Article](https://pubmed.ncbi.nlm.nih.gov/33495636/)
+[![Alt text](assets/img/thumbnails/t4.png)](https://www.nature.com/articles/s41593-020-00780-7)
 - **GitHub Repositories**:
   - [Code and sample data used for parts of the analysis in the paper Jafari et al 2020](https://github.com/portugueslab/Jafari-et-al-2020)
   - [Re-analysis of snRNA-seq data from Schirmer et al., Nature, 2019](https://github.com/engelsdaniel/schirmer_reanalyzed)
@@ -38,7 +38,7 @@ _For more information on our research and publications, visit [the SyNergy websi
 ---
 
 ### **Shared inflammatory glial cell signature after stab wound injury, revealed by spatial, temporal, and cell-type-specific profiling of the murine cerebral cortex**
-- [PubMed Article](https://pubmed.ncbi.nlm.nih.gov/38570482/)
+[![Alt text](assets/img/thumbnails/t5.png)](https://www.nature.com/articles/s41467-024-46625-w)
 - **GitHub Repositories**:
   - [Analysis pipeline for scRNA-seq/stRNA-seq](https://github.com/NinkovicLab/Koupourtidou-Schwarz-et-al)
   - [Microglia morphology quantification tool (MMQT)](https://github.com/isdneuroimaging/mmqt)
@@ -47,19 +47,19 @@ _For more information on our research and publications, visit [the SyNergy websi
 ---
 
 ### **Spatial Transcriptomics-correlated Electron Microscopy maps transcriptional and ultrastructural responses to brain injury**
-- [PubMed Article](https://pubmed.ncbi.nlm.nih.gov/37433806/)
+[![Alt text](assets/img/thumbnails/t6.png)](https://www.nature.com/articles/s41467-023-39447-9)
 - **GitHub Repository**: [Spatial Transcriptomics-correlated Electron Microscopy analysis](https://github.com/ISD-SystemsNeuroscience/STcEM)
 
 ---
 
 ### **T cell-mediated microglial activation triggers myelin pathology in a mouse model of amyloidosis**
-- [PubMed Article](https://pubmed.ncbi.nlm.nih.gov/38937583/)
+[![Alt text](assets/img/thumbnails/t7.png)](https://www.nature.com/articles/s41593-024-01682-8)
 - **GitHub Repository**: [scRNA-seq analysis](https://github.com/Ruoqing-feng/AD_inflammation)
 
 ---
 
 ### **T cells modulate the microglial response to brain ischemia**
-- [PubMed Article](https://pubmed.ncbi.nlm.nih.gov/36512388/)
+[![Alt text](assets/img/thumbnails/t8.png)](https://elifesciences.org/articles/82031)
 - **GitHub Repository**: [scRNA-seq analysis](https://github.com/Lieszlab/Benakis-et-al.-2022-eLife)
 
 ---
