@@ -18,7 +18,7 @@ body {
 }
 
 section {
-  margin-right: -50px;
+  margin-left: -100px;
   background-color: #e5e5e5;
   padding: 20px;
 }
@@ -82,4 +82,8 @@ a {
 /* Optional: Change link color on hover */
 a:hover {
     color: #6ea991; /* Replace with your desired hover color */
+}
+
+footer {
+    margin-left: -350px;
 }
