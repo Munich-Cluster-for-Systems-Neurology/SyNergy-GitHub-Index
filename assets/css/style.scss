@@ -36,7 +36,11 @@ section strong {
 }
 
 section hr {
-    color: #3e4a45;   /* Changes the color of paragraphs within this section */
+    border: 0;
+    height: 2px;
+    background-color: #0e1d17; /* Custom color */
+    width: 50%;                /* Custom width */
+    margin: 20px auto;          /* Center the line and add spacing */
 }
 
 section a {
