@@ -18,8 +18,12 @@ body {
 }
 
 section {
-  background-color: #fff;
-  padding: 50px;
+  margin-left: 100px;
+  background-color: #e5e5e5;
+}
+
+section p {
+    color: #3e4a45;   /* Changes the color of paragraphs within this section */
 }
 
 /* Add padding for the logo */
