@@ -232,7 +232,6 @@ _For more information on our research and publications, visit [the SyNergy websi
       <a href="https://github.com/engelsdaniel/mitoproteomics">Python algorithm for the analysis of the EAE mitochondrial proteome</a>
     </li>
   </ul>
-  <hr>
 </details>
 
 ---
