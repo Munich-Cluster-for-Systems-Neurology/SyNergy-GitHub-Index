@@ -8,7 +8,7 @@ _For more information on our research and publications, visit [the SyNergy websi
 
 <details>
   <summary> 
-    <span class="arrow">&#9660;</span> <h2>Transcriptomics Projects</h2>
+    <h2><span class="arrow">&#9660;</span> Transcriptomics Projects</h2>
   </summary>
 
   <h3>Adult neural stem cell activation in mice is regulated by the day/night cycle and intracellular calcium dynamics</h3>
@@ -154,7 +154,6 @@ _For more information on our research and publications, visit [the SyNergy websi
     </li>
   </ul>
   </p>
-  <hr>
 
 </details>
 
@@ -162,78 +161,76 @@ _For more information on our research and publications, visit [the SyNergy websi
 
 <details>
   <summary>
-    <span class="arrow">&#9660;</span> <h2>Proteomics Projects</h2>
+    <h2><span class="arrow">&#9660;</span> Proteomics Projects</h2>
   </summary>
 
   <h3>Defining the Adult Neural Stem Cell Niche Proteome Identifies Key Regulators of Adult Neurogenesis</h3>
-  <a href="https://www.cell.com/cell-stem-cell/fulltext/S1934-5909(20)30002-3">
-    <img src="assets/img/thumbnails/p1.png" alt="Thumbnail" />
-  </a>
   <p>
-    <ul>
-      <li>
-        <strong>GitHub Repository:</strong> 
-        <a href="https://github.com/FranzeLab">MATLAB scripts to analyze AFM data</a>
-      </li>
-    </ul>
+    <a href="https://www.cell.com/cell-stem-cell/fulltext/S1934-5909(20)30002-3">
+      <img src="assets/img/thumbnails/p1.png" alt="Thumbnail" />
+    </a>
   </p>
+  <ul>
+    <li>
+      <strong>GitHub Repository:</strong> 
+      <a href="https://github.com/FranzeLab">MATLAB scripts to analyze AFM data</a>
+    </li>
+  </ul>
   <hr>
 
   <h3>Mapping autophagosome contents identifies interleukin-7 receptor-alpha as a key cargo modulating CD4+ T cell proliferation</h3>
-  <a href="https://www.nature.com/articles/s41467-022-32718-x">
-    <img src="assets/img/thumbnails/p2.png" alt="Thumbnail" />
-  </a>
   <p>
-    <ul>
-      <li>
-        <strong>GitHub Repository:</strong> 
-        <a href="https://github.com/dzhou93/proximity_labelling_pipeline/commit/2e825476556087ae0cff51310556adb278a83d77">Mass spectrometry data analysis</a>
-      </li>
-    </ul>
+    <a href="https://www.nature.com/articles/s41467-022-32718-x">
+      <img src="assets/img/thumbnails/p2.png" alt="Thumbnail" />
+    </a>
   </p>
+  <ul>
+    <li>
+      <strong>GitHub Repository:</strong> 
+      <a href="https://github.com/dzhou93/proximity_labelling_pipeline/commit/2e825476556087ae0cff51310556adb278a83d77">Mass spectrometry data analysis</a>
+    </li>
+  </ul>
   <hr>
 
   <h3>Met/HGFR triggers detrimental reactive microglia in TBI</h3>
-  <a href="https://www.cell.com/cell-reports/fulltext/S2211-1247(22)01763-6">
-    <img src="assets/img/thumbnails/p3.png" alt="Thumbnail" />
-  </a>
   <p>
-    <ul>
-      <li>
-        <strong>GitHub Repository:</strong> 
-        <a href="https://github.com/Rida-Rehman/PROTEAS">PROTEAS: Protein microarray expression analysis</a>
-      </li>
-    </ul>
+    <a href="https://www.cell.com/cell-reports/fulltext/S2211-1247(22)01763-6">
+      <img src="assets/img/thumbnails/p3.png" alt="Thumbnail" />
+    </a>
   </p>
+  <ul>
+    <li>
+      <strong>GitHub Repository:</strong> 
+      <a href="https://github.com/Rida-Rehman/PROTEAS">PROTEAS: Protein microarray expression analysis</a>
+    </li>
+  </ul>
   <hr>
 
   <h3>Proteomic and lipidomic profiling of demyelinating lesions identifies fatty acids as modulators in lesion recovery</h3>
-  <a href="https://www.cell.com/cell-reports/fulltext/S2211-1247(21)01368-1">
-    <img src="assets/img/thumbnails/p4.png" alt="Thumbnail" />
-  </a>
   <p>
-    <ul>
-      <li>
-        <strong>GitHub Repository:</strong> 
-        <a href="https://github.com/lenkavaculciakova/lesion_volume">Code for calculating the lesion volume</a>
-      </li>
-    </ul>
+    <a href="https://www.cell.com/cell-reports/fulltext/S2211-1247(21)01368-1">
+      <img src="assets/img/thumbnails/p4.png" alt="Thumbnail" />
+    </a>
   </p>
+  <ul>
+    <li>
+      <strong>GitHub Repository:</strong> 
+      <a href="https://github.com/lenkavaculciakova/lesion_volume">Code for calculating the lesion volume</a>
+    </li>
+  </ul>
   <hr>
 
   <h3>Targeting the TCA cycle can ameliorate widespread axonal energy deficiency in neuroinflammatory lesions</h3>
-  <a href="https://www.nature.com/articles/s42255-023-00838-3">
-    <img src="assets/img/thumbnails/p5.png" alt="Thumbnail" />
-  </a>
   <p>
-    <ul>
-      <li>
-        <strong>GitHub Repository:</strong> 
-        <a href="https://github.com/engelsdaniel/mitoproteomics">Python algorithm for the analysis of the EAE mitochondrial proteome</a>
-      </li>
-    </ul>
+    <a href="https://www.nature.com/articles/s42255-023-00838-3">
+      <img src="assets/img/thumbnails/p5.png" alt="Thumbnail" />
+    </a>
   </p>
+  <ul>
+    <li>
+      <strong>GitHub Repository:</strong> 
+      <a href="https://github.com/engelsdaniel/mitoproteomics">Python algorithm for the analysis of the EAE mitochondrial proteome</a>
+    </li>
+  </ul>
   <hr>
 </details>
-
----
