@@ -62,8 +62,13 @@ details > summary {
 }
 
 /* Rotate arrow on click */
-details[open] > summary span.arrow {
+details[open] > summary .arrow {
   transform: rotate(90deg); /* Rotates the arrow 90 degrees to point down */
+}
+
+.arrow {
+  display: inline-block; /* Allows for rotation */
+  transition: transform 0.3s ease; /* Smooth transition for rotation */
 }
 
 header {
