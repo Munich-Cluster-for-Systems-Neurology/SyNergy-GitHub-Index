@@ -8,7 +8,7 @@ _For more information on our research and publications, visit [the SyNergy websi
 
 <details>
   <summary> 
-    <h2><span class="arrow">&#9660;</span> Transcriptomics Projects</h2>
+    <h2><span class="arrow">&#9654;</span> Transcriptomics Projects</h2>
   </summary>
 
   <h3>Adult neural stem cell activation in mice is regulated by the day/night cycle and intracellular calcium dynamics</h3>
@@ -161,7 +161,7 @@ _For more information on our research and publications, visit [the SyNergy websi
 
 <details>
   <summary>
-    <h2><span class="arrow">&#9660;</span> Proteomics Projects</h2>
+    <h2><span class="arrow">&#9654;</span> Proteomics Projects</h2>
   </summary>
 
   <h3>Defining the Adult Neural Stem Cell Niche Proteome Identifies Key Regulators of Adult Neurogenesis</h3>
