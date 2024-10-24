@@ -33,7 +33,8 @@ section p a {
 }
 
 section p em a {
-    position: relative; 
+    position: relative;
+    float: none;
 }
 
 section li::marker {
