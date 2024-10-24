@@ -70,31 +70,31 @@ _For more information on our research and publications, visit [the SyNergy websi
 ---
 
 ### **Defining the Adult Neural Stem Cell Niche Proteome Identifies Key Regulators of Adult Neurogenesis**
-- [PubMed Article](https://pubmed.ncbi.nlm.nih.gov/32032526/)
+[![Alt text](assets/img/thumbnails/p1.png)](https://www.cell.com/cell-stem-cell/fulltext/S1934-5909(20)30002-3)
 - **GitHub Repository**: [MATLAB scripts to analyze AFM data](https://github.com/FranzeLab)
 
 ---
 
 ### **Mapping autophagosome contents identifies interleukin-7 receptor-alpha as a key cargo modulating CD4+ T cell proliferation**
-- [PubMed Article](https://pubmed.ncbi.nlm.nih.gov/36055998/)
+[![Alt text](assets/img/thumbnails/p2.png)](https://www.nature.com/articles/s41467-022-32718-x)
 - **GitHub Repository**: [Mass spectrometry data analysis](https://github.com/dzhou93/proximity_labelling_pipeline/commit/2e825476556087ae0cff51310556adb278a83d77)
 
 ---
 
 ### **Met/HGFR triggers detrimental reactive microglia in TBI**
-- [PubMed Article](https://pubmed.ncbi.nlm.nih.gov/36577378/)
+[![Alt text](assets/img/thumbnails/p3.png)](https://www.cell.com/cell-reports/fulltext/S2211-1247(22)01763-6)
 - **GitHub Repository**: [PROTEAS: Protein microarray expression analysis](https://github.com/Rida-Rehman/PROTEAS)
 
 ---
 
 ### **Proteomic and lipidomic profiling of demyelinating lesions identifies fatty acids as modulators in lesion recovery**
-- [PubMed Article](https://pubmed.ncbi.nlm.nih.gov/34706241/)
+[![Alt text](assets/img/thumbnails/p4.png)](https://www.cell.com/cell-reports/fulltext/S2211-1247(21)01368-1)
 - **GitHub Repository**: [Code for calculating the lesion volume](https://github.com/lenkavaculciakova/lesion_volume)
 
 ---
 
 ### **Targeting the TCA cycle can ameliorate widespread axonal energy deficiency in neuroinflammatory lesions**
-- [PubMed Article](https://pubmed.ncbi.nlm.nih.gov/37430025/)
+[![Alt text](assets/img/thumbnails/p5.png)](https://www.nature.com/articles/s42255-023-00838-3)
 - **GitHub Repository**: [Python algorithm for the analysis of the EAE mitochondrial proteome](https://github.com/engelsdaniel/mitoproteomics)
 
 ---
