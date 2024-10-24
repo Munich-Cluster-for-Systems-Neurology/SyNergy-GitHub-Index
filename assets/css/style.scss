@@ -51,10 +51,9 @@ img[src="/SyNergy-GitHub-Index/assets/img/logo.png"] {
     max-width: 150%;
     background-color: #e5e5e5;
     display: inline-block; 
-}
-
-header {
-    text-align: right;   /* Aligns the image to the right */
+    position: relative;  /* Position the image relative to its normal position */
+    left: 70px;          /* Moves the image 20px to the right */
+    top: 10px; 
 }
 
 header p {
