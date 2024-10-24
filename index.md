@@ -18,7 +18,7 @@ _For more information on our research and publications, visit [the SyNergy websi
 ---
 
 ### **CD8+ T cells induce interferon-responsive oligodendrocytes and microglia in white matter aging**
-- [PubMed Article](https://pubmed.ncbi.nlm.nih.gov/36280798/)
+[![Alt text](assets/img/thumbnails/t2.png)](https://www.nature.com/articles/s41593-022-01183-6)
 - **GitHub Repository**: [Transcriptomics characterization of oligodendrocytes and microglia in white matter aging](https://github.com/ISD-SystemsNeuroscience/Aging_Oligos_Microglia)
 
 ---
