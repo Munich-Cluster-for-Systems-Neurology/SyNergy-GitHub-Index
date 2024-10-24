@@ -23,6 +23,7 @@ _For more information on our research and publications, visit [the SyNergy websi
     </li>
   </ul>
   </p>
+  <hr>
 
   <h3>CD8+ T cells induce interferon-responsive oligodendrocytes and microglia in white matter aging</h3>
   <p>
@@ -38,6 +39,7 @@ _For more information on our research and publications, visit [the SyNergy websi
     </li>
   </ul>
   </p>
+  <hr>
 
   <h3>Parkinson's disease motor symptoms rescue by CRISPRa‐reprogramming astrocytes into GABAergic neurons</h3>
   <p>
@@ -53,6 +55,7 @@ _For more information on our research and publications, visit [the SyNergy websi
     </li>
   </ul>
   </p>
+  <hr>
 
   <h3>Phagocyte-mediated synapse removal in cortical neuroinflammation is promoted by local calcium accumulation</h3>
   <p>
@@ -75,6 +78,7 @@ _For more information on our research and publications, visit [the SyNergy websi
     </li>
   </ul>
   </p>
+  <hr>
 
   <h3>Shared inflammatory glial cell signature after stab wound injury</h3>
   <p>
@@ -100,6 +104,7 @@ _For more information on our research and publications, visit [the SyNergy websi
     </li>
   </ul>
   </p>
+  <hr>
 
   <h3>Spatial Transcriptomics-correlated Electron Microscopy maps transcriptional and ultrastructural responses to brain injury</h3>
   <p>
@@ -115,6 +120,7 @@ _For more information on our research and publications, visit [the SyNergy websi
     </li>
   </ul>
   </p>
+  <hr>
 
   <h3>T cell-mediated microglial activation triggers myelin pathology in a mouse model of amyloidosis</h3>
   <p>
@@ -130,6 +136,7 @@ _For more information on our research and publications, visit [the SyNergy websi
     </li>
   </ul>
   </p>
+  <hr>
 
   <h3>T cells modulate the microglial response to brain ischemia</h3>
   <p>
@@ -145,9 +152,9 @@ _For more information on our research and publications, visit [the SyNergy websi
     </li>
   </ul>
   </p>
+  <hr>
 
 </details>
-
 
 ## Transcriptomics Projects
 ---
