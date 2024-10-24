@@ -6,25 +6,26 @@ _For more information on our research and publications, visit [the SyNergy websi
 
 ---
 
-## <Transcriptomics Projects>
+## Transcriptomics Projects
+<details>
+  <summary>Transcriptomics Projects</summary>
   <ul>
     <li>
-      <details>
-        <summary><strong>Adult neural stem cell activation in mice is regulated by the day/night cycle and intracellular calcium dynamics</strong></summary>
-        <p>
-          <a href="https://www.cell.com/cell/fulltext/S0092-8674(20)31748-7">
-            <img src="assets/img/thumbnails/t1.png" alt="Thumbnail 1">
-          </a>
-          <br>
-          <strong>GitHub Repository:</strong> 
-          <a href="https://github.com/SaghatelyanLab/Calcium_analysis_in_NSC">
-            Code for analysis of Ca2+ activity in neural stem cells
-          </a>
-        </p>
-      </details>
+      ### **Adult neural stem cell activation in mice is regulated by the day/night cycle and intracellular calcium dynamics**  
+      <a href="https://www.cell.com/cell/fulltext/S0092-8674(20)31748-7">
+        <img src="assets/img/thumbnails/t1.png" alt="Thumbnail 1">
+      </a>  
+      - **GitHub Repository**: [Code for analysis of Ca2+ activity in neural stem cells](https://github.com/SaghatelyanLab/Calcium_analysis_in_NSC)
+    </li>
+    <li>
+      ### **CD8+ T cells induce interferon-responsive oligodendrocytes and microglia in white matter aging**  
+      <a href="https://www.nature.com/articles/s41593-022-01183-6">
+        <img src="assets/img/thumbnails/t2.png" alt="Thumbnail 2">
+      </a>  
+      - **GitHub Repository**: [Transcriptomics characterization of oligodendrocytes and microglia in white matter aging](https://github.com/ISD-SystemsNeuroscience/Aging_Oligos_Microglia)
     </li>
   </ul>
-</Transcriptomics Projects>
+</details>
 
 
 ## Transcriptomics Projects
