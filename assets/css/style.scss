@@ -46,10 +46,16 @@ section a {
     color: #4a9476;   /* Changes the color of paragraphs within this section */
 }
 
+header {
+    display: flex;            /* Use flexbox to align items */
+    justify-content: flex-end; /* Align items to the right */
+}
+
 /* Add padding for the logo */
 img[src="/SyNergy-GitHub-Index/assets/img/logo.png"] {
-    margin: 0 0 20px; /* Adjust this value as needed */
+    padding-bottom: 100px  /* Adjust this value as needed */
     max-width: 150%;
+    background-color: #e5e5e5;
 }
 
 /* Change heading color */
