@@ -33,7 +33,7 @@ section p a {
 }
 
 section p em a {
-    overflow: auto; /* Clear floats within the section */
+    position: relative; 
 }
 
 section li::marker {
