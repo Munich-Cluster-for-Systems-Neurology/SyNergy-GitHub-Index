@@ -6,19 +6,25 @@ _For more information on our research and publications, visit [the SyNergy websi
 
 ---
 
-## Transcriptomics Projects
 <details>
-  <summary>Click to expand the list of projects</summary>
+  <summary> <h2>Transcriptomics Projects</h2></summary>
 
   <div>
     <h3>Adult neural stem cell activation in mice is regulated by the day/night cycle and intracellular calcium dynamics</h3>
+    </p>
     <a href="https://www.cell.com/cell/fulltext/S0092-8674(20)31748-7">
       <img src="assets/img/thumbnails/t1.png" alt="Thumbnail" />
     </a>
     <p>
-      <strong>GitHub Repository:</strong> 
-      <a href="https://github.com/SaghatelyanLab/Calcium_analysis_in_NSC">Code for analysis of Ca2+ activity in neural stem cells</a>
-    </p>
+    <ul>
+      <li>
+        ::marker
+        <strong>GitHub Repository:</strong> 
+        ": "
+        <a href="https://github.com/SaghatelyanLab/Calcium_analysis_in_NSC">Code for analysis of Ca2+ activity in neural stem cells</a>
+      </li>
+    <ul>
+    <hr>
 
     <h3>CD8+ T cells induce interferon-responsive oligodendrocytes and microglia in white matter aging</h3>
     <a href="https://www.nature.com/articles/s41593-022-01183-6">
