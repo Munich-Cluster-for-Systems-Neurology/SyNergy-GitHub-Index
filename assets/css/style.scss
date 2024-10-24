@@ -47,8 +47,7 @@ section a {
 }
 
 header {
-    display: flex;            /* Use flexbox to align items */
-    justify-content: flex-end; /* Align items to the right */
+    text-align: right;   /* Aligns the image to the right */
 }
 
 /* Add padding for the logo */
