@@ -58,8 +58,12 @@ section a {
 
 /* Style for the dropdown summary */
 details > summary {
-  cursor: pointer;
-  /* You can add specific styles here for the dropdown title if needed */
+  cursor: pointer; /* Makes it clear that it's clickable */
+}
+
+/* Rotate arrow on click */
+details[open] > summary .arrow {
+  transform: rotate(90deg); /* Rotates the arrow 90 degrees to point down */
 }
 
 header {
