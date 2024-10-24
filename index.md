@@ -8,7 +8,93 @@ _For more information on our research and publications, visit [the SyNergy websi
 
 ## Transcriptomics Projects
 <details>
-<summary>Click to expand the list of projects</summary>
+  <summary>Click to expand the list of projects</summary>
+
+  <div>
+    <h3>Adult neural stem cell activation in mice is regulated by the day/night cycle and intracellular calcium dynamics</h3>
+    <a href="https://www.cell.com/cell/fulltext/S0092-8674(20)31748-7">
+      <img src="assets/img/thumbnails/t1.png" alt="Thumbnail" />
+    </a>
+    <p>
+      <strong>GitHub Repository:</strong> 
+      <a href="https://github.com/SaghatelyanLab/Calcium_analysis_in_NSC">Code for analysis of Ca2+ activity in neural stem cells</a>
+    </p>
+
+    <h3>CD8+ T cells induce interferon-responsive oligodendrocytes and microglia in white matter aging</h3>
+    <a href="https://www.nature.com/articles/s41593-022-01183-6">
+      <img src="assets/img/thumbnails/t2.png" alt="Thumbnail" />
+    </a>
+    <p>
+      <strong>GitHub Repository:</strong> 
+      <a href="https://github.com/ISD-SystemsNeuroscience/Aging_Oligos_Microglia">Transcriptomics characterization of oligodendrocytes and microglia in white matter aging</a>
+    </p>
+
+    <h3>Parkinson's disease motor symptoms rescue by CRISPRa‐reprogramming astrocytes into GABAergic neurons</h3>
+    <a href="https://www.embopress.org/doi/full/10.15252/emmm.202114797">
+      <img src="assets/img/thumbnails/t3.png" alt="Thumbnail" />
+    </a>
+    <p>
+      <strong>GitHub Repository:</strong> 
+      <a href="https://github.com/theislab/astrocytes_reprogramming_analysis">Astrocytes reprogramming analysis</a>
+    </p>
+
+    <h3>Phagocyte-mediated synapse removal in cortical neuroinflammation is promoted by local calcium accumulation</h3>
+    <a href="https://www.nature.com/articles/s41593-020-00780-7">
+      <img src="assets/img/thumbnails/t4.png" alt="Thumbnail" />
+    </a>
+    <p>
+      <strong>GitHub Repositories:</strong>
+      <ul>
+        <li><a href="https://github.com/portugueslab/Jafari-et-al-2020">Code and sample data used for parts of the analysis in the paper Jafari et al 2020</a></li>
+        <li><a href="https://github.com/engelsdaniel/schirmer_reanalyzed">Re-analysis of snRNA-seq data from Schirmer et al., Nature, 2019</a></li>
+      </ul>
+    </p>
+
+    <h3>Shared inflammatory glial cell signature after stab wound injury, revealed by spatial, temporal, and cell-type-specific profiling of the murine cerebral cortex</h3>
+    <a href="https://www.nature.com/articles/s41467-024-46625-w">
+      <img src="assets/img/thumbnails/t5.png" alt="Thumbnail" />
+    </a>
+    <p>
+      <strong>GitHub Repositories:</strong>
+      <ul>
+        <li><a href="https://github.com/NinkovicLab/Koupourtidou-Schwarz-et-al">Analysis pipeline for scRNA-seq/stRNA-seq</a></li>
+        <li><a href="https://github.com/isdneuroimaging/mmqt">Microglia morphology quantification tool (MMQT)</a></li>
+        <li><a href="https://github.com/simonmfr/SPATA2/tree/publicationCK">Spatial gradient analysis</a></li>
+      </ul>
+    </p>
+
+    <h3>Spatial Transcriptomics-correlated Electron Microscopy maps transcriptional and ultrastructural responses to brain injury</h3>
+    <a href="https://www.nature.com/articles/s41467-023-39447-9">
+      <img src="assets/img/thumbnails/t6.png" alt="Thumbnail" />
+    </a>
+    <p>
+      <strong>GitHub Repository:</strong> 
+      <a href="https://github.com/ISD-SystemsNeuroscience/STcEM">Spatial Transcriptomics-correlated Electron Microscopy analysis</a>
+    </p>
+
+    <h3>T cell-mediated microglial activation triggers myelin pathology in a mouse model of amyloidosis</h3>
+    <a href="https://www.nature.com/articles/s41593-024-01682-8">
+      <img src="assets/img/thumbnails/t7.png" alt="Thumbnail" />
+    </a>
+    <p>
+      <strong>GitHub Repository:</strong> 
+      <a href="https://github.com/Ruoqing-feng/AD_inflammation">scRNA-seq analysis</a>
+    </p>
+
+    <h3>T cells modulate the microglial response to brain ischemia</h3>
+    <a href="https://elifesciences.org/articles/82031">
+      <img src="assets/img/thumbnails/t8.png" alt="Thumbnail" />
+    </a>
+    <p>
+      <strong>GitHub Repository:</strong> 
+      <a href="https://github.com/Lieszlab/Benakis-et-al.-2022-eLife">scRNA-seq analysis</a>
+    </p>
+  </div>
+
+</details>
+
+
+## Transcriptomics Projects
 ---
 
 ### **Adult neural stem cell activation in mice is regulated by the day/night cycle and intracellular calcium dynamics**
@@ -63,8 +149,6 @@ _For more information on our research and publications, visit [the SyNergy websi
 - **GitHub Repository**: [scRNA-seq analysis](https://github.com/Lieszlab/Benakis-et-al.-2022-eLife)
 
 ---
-
-</details>
 
  
 ## Proteomics Projects
