@@ -238,6 +238,56 @@ _For more information on our research and publications, visit [the SyNergy websi
 
 <details>
   <summary>
+    <h2><span class="arrow">&#9654;</span> Multi-omics Projects</h2>
+  </summary>
+
+  <h3>Multiomic ALS signatures highlight subclusters and sex differences suggesting the MAPK pathway as therapeutic target</h3>
+  <p>
+    <a href="https://www.nature.com/articles/s41467-024-49196-y">
+      <img src="assets/img/thumbnails/m1.png" alt="Thumbnail" />
+    </a>
+  </p>
+  <p>
+  <ul>
+    <li>
+      <strong>GitHub Repository:</strong> 
+      <a href="https://github.com/imsb-uke/MAXOMOD_Pipeline">Multi-omics analysis pipeline for the MAXOMOD project</a>
+    </li>
+  </ul>
+  </p>
+  <hr>
+  
+</details>
+
+---
+
+<details>
+  <summary>
+    <h2><span class="arrow">&#9654;</span> Imaging Projects</h2>
+  </summary>
+
+  <h3>Amyloid-associated increases in soluble tau relate to tau aggregation rates and cognitive decline in early Alzheimer’s disease</h3>
+  <p>
+    <a href="https://www.nature.com/articles/s41467-022-34129-4">
+      <img src="assets/img/thumbnails/i1.png" alt="Thumbnail" />
+    </a>
+  </p>
+  <p>
+  <ul>
+    <li>
+      <strong>GitHub Repository:</strong> 
+      <a href="https://github.com/alexapichet/NatureComms2022_tau">Sample R code from publication</a>
+    </li>
+  </ul>
+  </p>
+  <hr>
+  
+</details>
+
+---
+
+<details>
+  <summary>
     <h2><span class="arrow">&#9654;</span> Tutorials/Additional Resources</h2>
   </summary>
 
