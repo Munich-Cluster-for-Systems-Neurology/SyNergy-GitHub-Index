@@ -7,7 +7,7 @@ _For more information on our research and publications, visit [the SyNergy websi
 ---
 
 <details>
-  <summary> 
+  <summary>
     <h2><span class="arrow">&#9654;</span> Transcriptomics Projects</h2>
   </summary>
 
