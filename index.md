@@ -256,7 +256,7 @@ _For more information on our research and publications, visit [the SyNergy websi
           <a href="https://github.com/theislab">Theis Lab GitHub page</a>
         </li>
         <li>
-          <a href="https://github.com/theislab/single-cell-tutorial">Single-cell Tutorial</a>
+          <a href="https://github.com/theislab/single-cell-tutorial">Single-cell tutorial</a>
         </li>
         <li>
           <a href="https://github.com/theislab/single-cell-best-practices">Single-cell best practices</a>
@@ -294,6 +294,49 @@ _For more information on our research and publications, visit [the SyNergy websi
   <p>
     <a href="https://www.psmd-marker.com/">
       <img src="assets/img/thumbnails/a3.png" alt="Thumbnail" />
+    </a>
+  </p>
+   <p>
+  <ul>
+    <li>
+      <strong>GitHub Repositories:</strong>
+      <ul>
+        <li>
+          <a href="https://github.com/miac-research/psmd">PSMD (Peak width of Skeletonized Mean Diffusivity) Marker</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+  </p>
+  <hr>
+
+  <h3>Nanoscale Hub: Analysis pipelines</h3>
+  <p>
+    <a href="https://www.synergy-munich.de/research/technology-hubs/nanoscale-hub/bf16a24bb55fdf88">
+      <img src="assets/img/thumbnails/a4.png" alt="Thumbnail" />
+    </a>
+  </p>
+   <p>
+  <ul>
+    <li>
+      <strong>GitHub Repositories:</strong>
+      <ul>
+        <li>
+          <a href="https://github.com/georgkislinger/Crop_EM_to_bbox">Crop Electron Microscopy (EM) image to a bounding box (bbox)</a>
+        </li>
+        <li>
+          <a href="https://github.com/georgkislinger/ImportUtility">Import Utility</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+  </p>
+  <hr>
+
+  <h3>PSMD (marker for cerebral small vessel disease)</h3>
+  <p>
+    <a href="https://www.psmd-marker.com/">
+      <img src="assets/img/thumbnails/a5.png" alt="Thumbnail" />
     </a>
   </p>
    <p>
