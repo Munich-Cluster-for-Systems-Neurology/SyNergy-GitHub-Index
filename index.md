@@ -332,25 +332,5 @@ _For more information on our research and publications, visit [the SyNergy websi
   </ul>
   </p>
   <hr>
-
-  <h3>PSMD (marker for cerebral small vessel disease)</h3>
-  <p>
-    <a href="https://www.psmd-marker.com/">
-      <img src="assets/img/thumbnails/a5.png" alt="Thumbnail" />
-    </a>
-  </p>
-   <p>
-  <ul>
-    <li>
-      <strong>GitHub Repositories:</strong>
-      <ul>
-        <li>
-          <a href="https://github.com/miac-research/psmd">PSMD (Peak width of Skeletonized Mean Diffusivity) Marker</a>
-        </li>
-      </ul>
-    </li>
-  </ul>
-  </p>
-  <hr>
   
 </details>
