@@ -240,4 +240,54 @@ _For more information on our research and publications, visit [the SyNergy websi
   <summary>
     <h2><span class="arrow">&#9654;</span> Tutorials/Additional Resources</h2>
   </summary>
+
+  <h3>Theis Lab (Helmholtz Munich)</h3>
+  <p>
+    <a href="https://www.helmholtz-munich.de/en/icb/research-groups/theis-lab">
+      <img src="assets/img/thumbnails/a1.png" alt="Thumbnail" />
+    </a>
+  </p>
+   <p>
+  <ul>
+    <li>
+      <strong>GitHub Repositories:</strong>
+      <ul>
+        <li>
+          <a href="https://github.com/theislab">Theis Lab GitHub page</a>
+        </li>
+        <li>
+          <a href="https://github.com/theislab/single-cell-tutorial">Single-cell Tutorial</a>
+        </li>
+        <li>
+          <a href="https://github.com/theislab/single-cell-best-practices">Single-cell best practices</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+  </p>
+  <hr>
+
+  <h3>MATLAB Tutorials</h3>
+  <p>
+    <a href="https://de.mathworks.com/products/matlab.html?s_tid=hp_products_matlab">
+      <img src="assets/img/thumbnails/a2.png" alt="Thumbnail" />
+    </a>
+  </p>
+   <p>
+  <ul>
+    <li>
+      <strong>GitHub Repositories:</strong>
+      <ul>
+        <li>
+          <a href="https://github.com/csitron/MATLAB-Programs-for-Flow-Cytometry">MATLAB Programs for Flow Cytometry</a>
+        </li>
+        <li>
+          <a href="https://github.com/csitron/Western-Blot-Quantification-in-MATLAB">Western Blot Quantification in MATLAB</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+  </p>
+  <hr>
+  
 </details>
