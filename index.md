@@ -255,7 +255,6 @@ _For more information on our research and publications, visit [the SyNergy websi
     </li>
   </ul>
   </p>
-  <hr>
   
 </details>
 
@@ -280,7 +279,6 @@ _For more information on our research and publications, visit [the SyNergy websi
     </li>
   </ul>
   </p>
-  <hr>
   
 </details>
 
