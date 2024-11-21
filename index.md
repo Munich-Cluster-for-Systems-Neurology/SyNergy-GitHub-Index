@@ -155,7 +155,8 @@ _For more information on our research and publications, visit [the SyNergy websi
   <summary>
     <h2><span class="arrow">&#9654;</span> Proteomics Projects</h2>
   </summary>
-
+  
+  <hr>
   <h3>Defining the Adult Neural Stem Cell Niche Proteome Identifies Key Regulators of Adult Neurogenesis</h3>
   <p>
     <a href="https://www.cell.com/cell-stem-cell/fulltext/S1934-5909(20)30002-3">
@@ -228,6 +229,7 @@ _For more information on our research and publications, visit [the SyNergy websi
     <h2><span class="arrow">&#9654;</span> Multi-omics Projects</h2>
   </summary>
 
+  <hr>
   <h3>Multiomic ALS signatures highlight subclusters and sex differences suggesting the MAPK pathway as therapeutic target</h3>
   <p>
     <a href="https://www.nature.com/articles/s41467-024-49196-y">
@@ -250,7 +252,8 @@ _For more information on our research and publications, visit [the SyNergy websi
   <summary>
     <h2><span class="arrow">&#9654;</span> Imaging Projects</h2>
   </summary>
-
+  
+  <hr>
   <h3>Amyloid-associated increases in soluble tau relate to tau aggregation rates and cognitive decline in early Alzheimer’s disease</h3>
   <p>
     <a href="https://www.nature.com/articles/s41467-022-34129-4">
@@ -273,7 +276,8 @@ _For more information on our research and publications, visit [the SyNergy websi
   <summary>
     <h2><span class="arrow">&#9654;</span> Tutorials/Additional Resources</h2>
   </summary>
-
+  
+  <hr>
   <h3>Theis Lab (Helmholtz Munich)</h3>
   <p>
     <a href="https://www.helmholtz-munich.de/en/icb/research-groups/theis-lab">
