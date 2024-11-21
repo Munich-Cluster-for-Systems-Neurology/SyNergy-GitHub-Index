@@ -18,8 +18,13 @@ _For more information on our research and publications, visit [the SyNergy websi
     </a>
   </p>
   <p>
+  <ul>
+    <li>
+      <strong>GitHub Repository:</strong> 
+      <a href="https://github.com/SaghatelyanLab/Calcium_analysis_in_NSC">Code for analysis of Ca2+ activity in neural stem cells</a>
+    </li>
     <a href="https://github.com/SaghatelyanLab/Calcium_analysis_in_NSC">Code for analysis of Ca2+ activity in neural stem cells</a>
-  </p>
+  </ul>  </p>
   <hr>
 
   <h3>CD8+ T cells induce interferon-responsive oligodendrocytes and microglia in white matter aging</h3>
