@@ -68,8 +68,10 @@ details[open] > summary .arrow {
 }
 
 .arrow {
-  display: inline-block; /* Allows for rotation */
-  transition: transform 0.3s ease; /* Smooth transition for rotation */
+  display: inline-block; /* Keeps the arrow inline and allows for styling */
+  font-size: 0.75em; /* Adjust the size relative to the base font size */
+  line-height: 1; /* Ensures the arrow stays aligned */
+  transition: transform 0.2s ease; /* Smooth rotation transition */
 }
 
 header {
