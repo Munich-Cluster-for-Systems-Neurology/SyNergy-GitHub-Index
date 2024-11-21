@@ -62,9 +62,13 @@ section a {
     color: #4a9476;   /* Changes the color of paragraphs within this section */
 }
 
-/* Style for the dropdown summary */
 details > summary {
-  cursor: pointer; /* Makes it clear that it's clickable */
+  cursor: pointer; /* Keep the pointer cursor for the clickable summary */
+}
+
+/* Disable cursor on the summary when the details are opened (optional) */
+details[open] > summary {
+  cursor: default; /* Or none to remove it completely */
 }
 
 /* Rotate arrow on click */
@@ -73,10 +77,11 @@ details[open] > summary .arrow {
 }
 
 .arrow {
-  display: inline-block; /* Keeps the arrow inline and allows for styling */
-  font-size: 0.75em; /* Adjust the size relative to the base font size */
-  line-height: 1; /* Ensures the arrow stays aligned */
-  transition: transform 0.2s ease; /* Smooth rotation transition */
+  display: inline-block;
+  font-size: 0.75em;
+  line-height: 1;
+  transition: transform 0.2s ease;
+  cursor: pointer; /* Ensure the arrow itself also has a pointer cursor */
 }
 
 header {
