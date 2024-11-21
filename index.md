@@ -22,7 +22,6 @@ _For more information on our research and publications, visit [the SyNergy websi
     <li>
       <a href="https://github.com/SaghatelyanLab/Calcium_analysis_in_NSC">Code for analysis of Ca2+ activity in neural stem cells</a>
     </li>
-    <a href="https://github.com/SaghatelyanLab/Calcium_analysis_in_NSC">Code for analysis of Ca2+ activity in neural stem cells</a>
   </ul> 
   </p>
   <hr>
@@ -36,7 +35,6 @@ _For more information on our research and publications, visit [the SyNergy websi
   <p>
   <ul>
     <li>
-      <strong>GitHub Repository:</strong> 
       <a href="https://github.com/ISD-SystemsNeuroscience/Aging_Oligos_Microglia">Transcriptomics characterization of oligodendrocytes and microglia in white matter aging</a>
     </li>
   </ul>
@@ -52,7 +50,6 @@ _For more information on our research and publications, visit [the SyNergy websi
   <p>
   <ul>
     <li>
-      <strong>GitHub Repository:</strong> 
       <a href="https://github.com/theislab/astrocytes_reprogramming_analysis">Astrocytes reprogramming analysis</a>
     </li>
   </ul>
@@ -68,7 +65,6 @@ _For more information on our research and publications, visit [the SyNergy websi
   <p>
   <ul>
     <li>
-      <strong>GitHub Repositories:</strong>
       <ul>
         <li>
           <a href="https://github.com/portugueslab/Jafari-et-al-2020">Code and sample data used for parts of the analysis in the paper Jafari et al 2020</a>
@@ -91,7 +87,6 @@ _For more information on our research and publications, visit [the SyNergy websi
   <p>
   <ul>
     <li>
-      <strong>GitHub Repositories:</strong>
       <ul>
         <li>
           <a href="https://github.com/NinkovicLab/Koupourtidou-Schwarz-et-al">Analysis pipeline for scRNA-seq/stRNA-seq</a>
@@ -117,7 +112,6 @@ _For more information on our research and publications, visit [the SyNergy websi
   <p>
   <ul>
     <li>
-      <strong>GitHub Repository:</strong> 
       <a href="https://github.com/ISD-SystemsNeuroscience/STcEM">Spatial Transcriptomics-correlated Electron Microscopy analysis</a>
     </li>
   </ul>
@@ -133,7 +127,6 @@ _For more information on our research and publications, visit [the SyNergy websi
   <p>
   <ul>
     <li>
-      <strong>GitHub Repository:</strong> 
       <a href="https://github.com/Ruoqing-feng/AD_inflammation">scRNA-seq analysis</a>
     </li>
   </ul>
@@ -149,7 +142,6 @@ _For more information on our research and publications, visit [the SyNergy websi
   <p>
   <ul>
     <li>
-      <strong>GitHub Repository:</strong> 
       <a href="https://github.com/Lieszlab/Benakis-et-al.-2022-eLife">scRNA-seq analysis</a>
     </li>
   </ul>
@@ -172,7 +164,6 @@ _For more information on our research and publications, visit [the SyNergy websi
   </p>
   <ul>
     <li>
-      <strong>GitHub Repository:</strong> 
       <a href="https://github.com/FranzeLab">MATLAB scripts to analyze AFM data</a>
     </li>
   </ul>
@@ -186,7 +177,6 @@ _For more information on our research and publications, visit [the SyNergy websi
   </p>
   <ul>
     <li>
-      <strong>GitHub Repository:</strong> 
       <a href="https://github.com/dzhou93/proximity_labelling_pipeline/commit/2e825476556087ae0cff51310556adb278a83d77">Mass spectrometry data analysis</a>
     </li>
   </ul>
@@ -200,7 +190,6 @@ _For more information on our research and publications, visit [the SyNergy websi
   </p>
   <ul>
     <li>
-      <strong>GitHub Repository:</strong> 
       <a href="https://github.com/Rida-Rehman/PROTEAS">PROTEAS: Protein microarray expression analysis</a>
     </li>
   </ul>
@@ -214,7 +203,6 @@ _For more information on our research and publications, visit [the SyNergy websi
   </p>
   <ul>
     <li>
-      <strong>GitHub Repository:</strong> 
       <a href="https://github.com/lenkavaculciakova/lesion_volume">Code for calculating the lesion volume</a>
     </li>
   </ul>
@@ -228,7 +216,6 @@ _For more information on our research and publications, visit [the SyNergy websi
   </p>
   <ul>
     <li>
-      <strong>GitHub Repository:</strong> 
       <a href="https://github.com/engelsdaniel/mitoproteomics">Python algorithm for the analysis of the EAE mitochondrial proteome</a>
     </li>
   </ul>
@@ -250,7 +237,6 @@ _For more information on our research and publications, visit [the SyNergy websi
   <p>
   <ul>
     <li>
-      <strong>GitHub Repository:</strong> 
       <a href="https://github.com/imsb-uke/MAXOMOD_Pipeline">Multi-omics analysis pipeline for the MAXOMOD project</a>
     </li>
   </ul>
@@ -274,7 +260,6 @@ _For more information on our research and publications, visit [the SyNergy websi
   <p>
   <ul>
     <li>
-      <strong>GitHub Repository:</strong> 
       <a href="https://github.com/alexapichet/NatureComms2022_tau">Sample R code from publication</a>
     </li>
   </ul>
@@ -298,7 +283,6 @@ _For more information on our research and publications, visit [the SyNergy websi
    <p>
   <ul>
     <li>
-      <strong>GitHub Repositories:</strong>
       <ul>
         <li>
           <a href="https://github.com/theislab">Theis Lab GitHub page</a>
@@ -324,7 +308,6 @@ _For more information on our research and publications, visit [the SyNergy websi
    <p>
   <ul>
     <li>
-      <strong>GitHub Repositories:</strong>
       <ul>
         <li>
           <a href="https://github.com/csitron/MATLAB-Programs-for-Flow-Cytometry">MATLAB Programs for Flow Cytometry</a>
@@ -347,7 +330,6 @@ _For more information on our research and publications, visit [the SyNergy websi
    <p>
   <ul>
     <li>
-      <strong>GitHub Repositories:</strong>
       <ul>
         <li>
           <a href="https://github.com/miac-research/psmd">PSMD (Peak width of Skeletonized Mean Diffusivity) Marker</a>
@@ -367,7 +349,6 @@ _For more information on our research and publications, visit [the SyNergy websi
    <p>
   <ul>
     <li>
-      <strong>GitHub Repositories:</strong>
       <ul>
         <li>
           <a href="https://github.com/georgkislinger/Crop_EM_to_bbox">Crop Electron Microscopy (EM) image to a bounding box (bbox)</a>
