@@ -5,6 +5,9 @@ Here you can explore GitHub repositories associated with SyNergy projects, and l
 _For more information on our research and publications, visit [the SyNergy website](https://synergy-munich.de/)._
 
 <br>
+
+---
+
 <details>
   <summary>
     <h2><span class="arrow">&#9654;</span> Transcriptomics Projects</h2>
