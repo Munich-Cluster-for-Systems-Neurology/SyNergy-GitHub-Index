@@ -14,7 +14,7 @@ body {
   background-color: #4b9476;
   padding:50px;
   font: 14px/1.5 "Roboto", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif; /* font: 14px/1.5 "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif; */
-  color:#e5e5e5;
+  color:#ffffff;
   font-weight:400;
 }
 
@@ -68,6 +68,7 @@ details > summary {
   cursor: pointer;  /* Ensure the pointer cursor is displayed on hover */
 }
 
+/*
 .show-more {
     display: none;
  }
@@ -86,6 +87,7 @@ details > summary {
 .toggle-button:hover {
     background-color: #0056b3;
 }
+*/
 
 .arrow {
   display: inline-block;
@@ -110,7 +112,7 @@ header {
 /* Add padding for the logo */
 img[src="/SyNergy-GitHub-Index/assets/img/logo.png"] {
     max-width: 150%;
-    background-color: #e5e5e5;
+    /*background-color: #e5e5e5;*/
     display: inline-block; 
 }
 
