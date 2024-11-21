@@ -277,7 +277,7 @@ _For more information on our research and publications, visit [the SyNergy websi
   <h3>Theis Lab (Helmholtz Munich)</h3>
   <p>
     <a href="https://www.helmholtz-munich.de/en/icb/research-groups/theis-lab">
-      <img src="assets/img/thumbnails/a1.png" alt="Thumbnail" />
+      <img src="assets/img/thumbnails/a0.png" alt="Thumbnail" />
     </a>
   </p>
    <p>
