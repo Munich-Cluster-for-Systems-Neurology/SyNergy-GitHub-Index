@@ -74,6 +74,7 @@ details > summary {
   line-height: 1;
   transition: transform 0.2s ease;
   cursor: pointer; /* Ensure the arrow itself also has a pointer cursor */
+  margin-right: 10px;
 }
 
 /* Rotate arrow on click */
@@ -115,7 +116,6 @@ h2 {
     color: #4a9476;  /* Replace with your desired heading color */
     font-size:20px;
     font-weight: 500; /* Use 'medium' for a less thick appearance, bold is 700 */
-    margin-left: 20px;
 }
 
 /*
