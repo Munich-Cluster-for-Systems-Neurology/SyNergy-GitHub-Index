@@ -59,6 +59,8 @@ section a {
 /* Style for the dropdown summary */
 details > summary {
   cursor: pointer; /* Makes it clear that it's clickable */
+  width: 15px;
+  height: 20px;
 }
 
 /* Rotate arrow on click */
@@ -67,8 +69,6 @@ details[open] > summary .arrow {
 }
 
 .arrow {
-  width: 15px;
-  height: 20px;
   display: inline-block; /* Allows for rotation */
   transition: transform 0.3s ease; /* Smooth transition for rotation */
 }
