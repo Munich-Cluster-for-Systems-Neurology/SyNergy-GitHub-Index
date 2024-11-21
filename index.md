@@ -158,24 +158,3 @@ _For more information on our research and publications, visit [the SyNergy websi
     }
   }
 </script>
-
-<style>
-  .show-more {
-    display: none;
-  }
-
-  .toggle-button {
-    display: block;
-    margin: 10px auto;
-    padding: 5px 15px;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-
-  .toggle-button:hover {
-    background-color: #0056b3;
-  }
-</style>
