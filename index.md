@@ -24,7 +24,6 @@ _For more information on our research and publications, visit [the SyNergy websi
       </li>
     </ul>
     <hr>
-
     <h3>CD8+ T cells induce interferon-responsive oligodendrocytes and microglia in white matter aging</h3>
     <p>
       <a href="https://www.nature.com/articles/s41593-022-01183-6">
@@ -37,7 +36,6 @@ _For more information on our research and publications, visit [the SyNergy websi
       </li>
     </ul>
     <hr>
-
     <h3>Parkinson's disease motor symptoms rescue by CRISPRa‐reprogramming astrocytes into GABAergic neurons</h3>
     <p>
       <a href="https://www.embopress.org/doi/full/10.15252/emmm.202114797">
@@ -73,7 +71,7 @@ _For more information on our research and publications, visit [the SyNergy websi
     </ul>
     <hr>
 
-    <h3>Shared inflammatory glial cell signature after stab wound injury</h3>
+  <h3>Shared inflammatory glial cell signature after stab wound injury</h3>
   <p>
     <a href="https://www.nature.com/articles/s41467-024-46625-w">
       <img src="assets/img/thumbnails/t5.png" alt="Thumbnail" />
@@ -145,7 +143,7 @@ _For more information on our research and publications, visit [the SyNergy websi
     <!-- Add remaining items similarly -->
   </div>
 
-  <button class="toggle-button" onclick="toggleVisibility(this)">Show More</button>
+<button class="toggle-button" onclick="toggleVisibility(this)">Show More</button>
 </details>
 
 <script>
