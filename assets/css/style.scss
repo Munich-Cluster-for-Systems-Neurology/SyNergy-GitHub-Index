@@ -2,6 +2,7 @@
 ---
 
 @import "{{ site.theme }}"; /* Import the theme styles */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 /* Custom styles */
 
@@ -12,7 +13,7 @@ h1 a {
 body {
   background-color: #162c23;
   padding:50px;
-  font: 14px/1.5 "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font: 14px/1.5 "Roboto", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif; /* font: 14px/1.5 "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif; */
   color:#e5e5e5;
   font-weight:400;
 }
