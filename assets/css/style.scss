@@ -74,11 +74,12 @@ details[open] > summary .arrow {
 header {
     margin-left: -360px;
     margin-top: -20px;
+    max-width: 200%;
 }
 
 /* Add padding for the logo */
 img[src="/SyNergy-GitHub-Index/assets/img/logo.png"] {
-    max-width: 400%;
+    max-width: 200%;
     background-color: #e5e5e5;
     display: inline-block; 
 }
