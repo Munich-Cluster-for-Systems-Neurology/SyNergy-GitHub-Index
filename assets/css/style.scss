@@ -101,10 +101,13 @@ header p.view {
 h1 {
     color: #162c23;  /* Replace with your desired heading color */
     font-size:25px;
+    font-weight: 600; /* Use 'semi-bold' for a less thick appearance, bold is 700 */
 }
+
 h2 {
     color: #4a9476;  /* Replace with your desired heading color */
     font-size:20px;
+    font-weight: 600; /* Use 'semi-bold' for a less thick appearance, bold is 700 */
 }
 
 /*
