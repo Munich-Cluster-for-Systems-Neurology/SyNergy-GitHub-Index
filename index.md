@@ -18,9 +18,7 @@ _For more information on our research and publications, visit [the SyNergy websi
     </a>
   </p>
   <p>
-  <ul>
     <a href="https://github.com/SaghatelyanLab/Calcium_analysis_in_NSC">Code for analysis of Ca2+ activity in neural stem cells</a>
-  </ul>
   </p>
   <hr>
 
