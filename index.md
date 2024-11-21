@@ -4,13 +4,13 @@ Here you can explore GitHub repositories associated with SyNergy projects, and l
 
 _For more information on our research and publications, visit [the SyNergy website](https://synergy-munich.de/)._
 
----
 
 <details>
   <summary>
     <h2><span class="arrow">&#9654;</span> Transcriptomics Projects</h2>
   </summary>
 
+  <hr>
   <h3>Adult neural stem cell activation in mice is regulated by the day/night cycle and intracellular calcium dynamics</h3>
   <p>
     <a href="https://www.cell.com/cell/fulltext/S0092-8674(20)31748-7">
@@ -20,11 +20,11 @@ _For more information on our research and publications, visit [the SyNergy websi
   <p>
   <ul>
     <li>
-      <strong>GitHub Repository:</strong> 
       <a href="https://github.com/SaghatelyanLab/Calcium_analysis_in_NSC">Code for analysis of Ca2+ activity in neural stem cells</a>
     </li>
     <a href="https://github.com/SaghatelyanLab/Calcium_analysis_in_NSC">Code for analysis of Ca2+ activity in neural stem cells</a>
-  </ul>  </p>
+  </ul> 
+  </p>
   <hr>
 
   <h3>CD8+ T cells induce interferon-responsive oligodendrocytes and microglia in white matter aging</h3>
