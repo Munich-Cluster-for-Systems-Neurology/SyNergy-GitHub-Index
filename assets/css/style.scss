@@ -46,6 +46,11 @@ section strong {
     color: #3e4a45;   /* Changes the color of paragraphs within this section */
 }
 
+section ul {
+  list-style-type: none;  /* Removes the default bullets */
+  padding-left: 0;        /* Optional: Removes default padding */
+}
+
 section hr {
     border: 0;
     height: 1px;
