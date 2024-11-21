@@ -63,17 +63,9 @@ section a {
 }
 
 details > summary {
-  cursor: pointer; /* Keep the pointer cursor for the clickable summary */
-}
-
-/* Disable cursor on the summary when the details are opened (optional) */
-details[open] > summary {
-  cursor: none; /* Or none to remove it completely */
-}
-
-/* Rotate arrow on click */
-details[open] > summary .arrow {
-  transform: rotate(90deg); /* Rotates the arrow 90 degrees to point down */
+  list-style: none;  /* Remove the default list-style arrow */
+  appearance: none;  /* Remove default browser-specific styles */
+  cursor: pointer;  /* Ensure the pointer cursor is displayed on hover */
 }
 
 .arrow {
@@ -82,6 +74,11 @@ details[open] > summary .arrow {
   line-height: 1;
   transition: transform 0.2s ease;
   cursor: pointer; /* Ensure the arrow itself also has a pointer cursor */
+}
+
+/* Rotate arrow on click */
+details[open] > summary .arrow {
+  transform: rotate(90deg); /* Rotates the arrow 90 degrees to point down */
 }
 
 header {
