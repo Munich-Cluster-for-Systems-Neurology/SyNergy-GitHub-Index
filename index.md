@@ -67,7 +67,7 @@ _For more information on our research and publications, visit [the SyNergy websi
     <li>
       <ul>
         <li>
-          <a href="https://github.com/portugueslab/Jafari-et-al-2020">Code and sample data used for parts of the analysis in the paper Jafari et al 2020</a>
+          <a href="https://github.com/portugueslab/Jafari-et-al-2020">Code and sample data used for parts of the analysis in the paper Jafari et al., 2020</a>
         </li>
         <li>
           <a href="https://github.com/engelsdaniel/schirmer_reanalyzed">Re-analysis of snRNA-seq data from Schirmer et al., Nature, 2019</a>
