@@ -48,7 +48,7 @@ section strong {
 section hr {
     border: 0;
     height: 1px;
-    background-color: #162c23; /* Custom color */
+    background-color: #d5d5d5; /* Custom color */
     margin: 20px auto;          /* Center the line and add spacing */
 }
 
@@ -67,6 +67,8 @@ details[open] > summary .arrow {
 }
 
 .arrow {
+  width: 15px;
+  height: 20px;
   display: inline-block; /* Allows for rotation */
   transition: transform 0.3s ease; /* Smooth transition for rotation */
 }
