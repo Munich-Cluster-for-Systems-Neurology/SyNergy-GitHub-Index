@@ -68,7 +68,7 @@ details > summary {
 
 /* Disable cursor on the summary when the details are opened (optional) */
 details[open] > summary {
-  cursor: default; /* Or none to remove it completely */
+  cursor: none; /* Or none to remove it completely */
 }
 
 /* Rotate arrow on click */
