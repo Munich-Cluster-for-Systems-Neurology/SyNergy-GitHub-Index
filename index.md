@@ -179,6 +179,36 @@ _For more information on our research and publications, visit [the SyNergy websi
     </li>
   </ul>
   </p>
+  <hr>
+
+  <h3>High-calorie diets uncouple hypothalamic oxytocin neurons from a gut-to-brain satiation pathway via κ-opioid signaling</h3>
+  <p>
+    <a href="https://www.cell.com/cell-reports/fulltext/S2211-1247(23)01317-7">
+      <img src="assets/img/thumbnails/t11.png" alt="Thumbnail" />
+    </a>
+  </p>
+  <p>
+  <ul>
+    <li>
+      <a href="https://github.com/viktormiok/snRNAseq_RiboTagRNAseq-oxytocin">RiboTag-mRNA-seq and snRNA-seq analysis</a>
+    </li>
+  </ul>
+  </p>
+  <hr>
+
+  <h3>Twin study identifies early immunological and metabolic dysregulation of CD8+ T cells in multiple sclerosis</h3>
+  <p>
+    <a href="https://www.science.org/doi/10.1126/sciimmunol.adj8094">
+      <img src="assets/img/thumbnails/t12.png" alt="Thumbnail" />
+    </a>
+  </p>
+  <p>
+  <ul>
+    <li>
+      <a href="https://github.com/beltranLab/peripheral-cd8-mstwinstudy">scRNA-seq and single-cell T-cell receptor (TCR) sequencing analysis</a>
+    </li>
+  </ul>
+  </p>
 
 </details>
 
