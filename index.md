@@ -149,6 +149,36 @@ _For more information on our research and publications, visit [the SyNergy websi
     </li>
   </ul>
   </p>
+  <hr>
+
+  <h3>CD74 is a functional MIF receptor on activated CD4+ T cells</h3>
+  <p>
+    <a href="https://link.springer.com/article/10.1007/s00018-024-05338-5">
+      <img src="assets/img/thumbnails/t9.png" alt="Thumbnail" />
+    </a>
+  </p>
+  <p>
+  <ul>
+    <li>
+      <a href="https://github.com/SimonE1220/CD74Tcelldiff">Re-analysis pipeline: BulkRNAseq</a>
+    </li>
+  </ul>
+  </p>
+  <hr>
+
+  <h3>Distinct molecular profiles of skull bone marrow in health and neurological disorders</h3>
+  <p>
+    <a href="https://www.cell.com/cell/fulltext/S0092-8674(23)00742-0">
+      <img src="assets/img/thumbnails/t10.png" alt="Thumbnail" />
+    </a>
+  </p>
+  <p>
+  <ul>
+    <li>
+      <a href="https://github.com/erturklab/skull_immune">Analysis of transcriptomics and proteomics data</a>
+    </li>
+  </ul>
+  </p>
 
 </details>
 
@@ -260,6 +290,20 @@ _For more information on our research and publications, visit [the SyNergy websi
     </li>
   </ul>
   <hr>
+
+  <h3>Diet triggers specific responses of hypothalamic astrocytes in time and region dependent manner</h3>
+  <p>
+    <a href="https://onlinelibrary.wiley.com/doi/10.1002/glia.24237">
+      <img src="assets/img/thumbnails/m3.png" alt="Thumbnail" />
+    </a>
+  </p>
+  <p>
+  <ul>
+    <li>
+      <a href="https://github.com/viktormiok/AstrocytesHeterogenityARC">Astrocytes Heterogenity (ARC)</a>
+    </li>
+  </ul>
+  </p>
   
 </details>
 
