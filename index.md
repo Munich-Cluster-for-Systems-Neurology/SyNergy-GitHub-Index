@@ -248,7 +248,7 @@ _For more information on our research and publications, visit [the SyNergy websi
   </p>
   <hr>
 
-  <h3>Mapping autophagosome contents identifies interleukin-7 receptor-alpha as a key cargo modulating CD4+ T cell proliferation</h3>
+  <h3>Multi-omic landscaping of human midbrains identifies disease-relevant molecular targets and pathways in advanced-stage Parkinson's disease</h3>
   <p>
     <a href="https://onlinelibrary.wiley.com/doi/10.1002/ctm2.692">
       <img src="assets/img/thumbnails/m2.png" alt="Thumbnail" />
