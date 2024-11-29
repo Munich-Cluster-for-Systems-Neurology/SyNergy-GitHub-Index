@@ -246,6 +246,20 @@ _For more information on our research and publications, visit [the SyNergy websi
     </li>
   </ul>
   </p>
+  <hr>
+
+  <h3>Mapping autophagosome contents identifies interleukin-7 receptor-alpha as a key cargo modulating CD4+ T cell proliferation</h3>
+  <p>
+    <a href="https://onlinelibrary.wiley.com/doi/10.1002/ctm2.692">
+      <img src="assets/img/thumbnails/m2.png" alt="Thumbnail" />
+    </a>
+  </p>
+  <ul>
+    <li>
+      <a href="https://github.com/aGalhoz/Multi-Omics-PD">DEx Multi-Omics in Parkinson Disease (PD)</a>
+    </li>
+  </ul>
+  <hr>
   
 </details>
 
