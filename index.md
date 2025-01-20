@@ -6,8 +6,6 @@ Here you can explore GitHub repositories associated with SyNergy projects, and l
 
 _For more information on our research and publications, visit [the SyNergy website](https://synergy-munich.de/)._
 
-<br>
-
 ---
 
 ## Search
