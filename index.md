@@ -469,17 +469,17 @@ _For more information on our research and publications, visit [the SyNergy websi
 
 <script>
 function filterProjects() {
-  const searchInput = document.getElementById('searchBox').value.toLowerCase();
-  const projectContainer = document.getElementById('projectsContainer');
-  const projects = projectContainer.getElementsByTagName('details');
-
-  Array.from(projects).forEach((project) => {
-    const textContent = project.textContent || project.innerText;
-    if (textContent.toLowerCase().includes(searchInput)) {
-      project.style.display = '';
+  const input = document.getElementById("search-input");
+  const filter = input.value.toLowerCase();
+  const container = document.getElementById("projectsContainer");
+  const dropdownItems = container.getElementsByClassName("dropdown-item");  // Selecting the actual dropdown items
+  
+  for (let item of dropdownItems) {
+    if (item.textContent.toLowerCase().includes(filter)) {
+      item.style.display = ""; // Show matching items
     } else {
-      project.style.display = 'none';
+      item.style.display = "none"; // Hide non-matching items
     }
-  });
+  }
 }
 </script>
