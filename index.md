@@ -531,16 +531,23 @@ function filterProjects(searchQuery) {
 
 // Function to highlight matched text within an element
 function highlightText(element, searchQuery) {
-    var regex = new RegExp('(' + searchQuery + ')', 'gi'); // Case-insensitive search
-    var innerHTML = element.innerHTML;
-    element.innerHTML = innerHTML.replace(regex, '<span class="highlight">$1</span>'); // Wrap matched text in <span>
+    const regex = new RegExp(`(${searchQuery})`, 'gi'); // Match the search query (case-insensitive)
+    const content = element.textContent; // Get plain text (ignoring inner HTML)
+
+    // Replace matched text with a <span> while keeping other HTML intact
+    const highlightedHTML = content.replace(regex, '<span class="highlight">$1</span>');
+    element.innerHTML = highlightedHTML; // Safely inject the updated HTML
 }
 
 // Function to remove any previous highlights
 function removeHighlights(element) {
-    var regex = /<span class="highlight">.*?<\/span>/gi;
-    element.innerHTML = element.innerHTML.replace(regex, function(match) {
-        return match.replace(/<span class="highlight">|<\/span>/gi, ''); // Remove the highlight span tags
+    // Find all <span> elements with the "highlight" class within the element
+    const highlights = element.querySelectorAll('span.highlight');
+
+    // Replace each highlighted span with its text content
+    highlights.forEach((highlight) => {
+        const parent = highlight.parentNode;
+        parent.replaceChild(document.createTextNode(highlight.textContent), highlight);
     });
 }
 
@@ -549,10 +556,4 @@ document.getElementById('searchInput').addEventListener('input', function() {
     filterProjects(this.value); // Pass the value directly to filterProjects
 });
 
-// Optional: Expand details block when the arrow is clicked
-document.querySelectorAll('details').forEach(function(details) {
-    details.addEventListener('toggle', function() {
-        // Add logic if you want to do something when the details are toggled
-    });
-});
 </script>
