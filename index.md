@@ -550,22 +550,24 @@ function removeHighlights(element) {
 
 // Function to highlight matched text
 function highlightText(element, searchQuery) {
-    const regex = new RegExp(`(${searchQuery})`, 'gi');
+    const regex = new RegExp(`(${searchQuery})`, 'gi'); // Case-insensitive match
 
-    // Process child nodes recursively to preserve the structure
+    // Loop through each child node of the element
     element.childNodes.forEach(node => {
         if (node.nodeType === Node.TEXT_NODE) {
-            // If the node is a text node, replace matching text
+            // If it's a text node, replace matching text
             const parent = node.parentNode;
             const highlightedText = node.textContent.replace(regex, '<span class="highlight">$1</span>');
-            const wrapper = document.createElement('span');
-            wrapper.innerHTML = highlightedText;
 
             // Replace the text node with the highlighted HTML content
+            const wrapper = document.createElement('span');
+            wrapper.innerHTML = highlightedText;
             parent.replaceChild(wrapper, node);
         } else if (node.nodeType === Node.ELEMENT_NODE) {
-            // If the child node is an element (e.g., <a>), process it recursively
-            highlightText(node, searchQuery);
+            // If it's an element node, recursively process its children (e.g., <a>, <ul>, <li>)
+            if (node.tagName !== 'SPAN' && node.tagName !== 'A') { // Avoid reprocessing already highlighted nodes
+                highlightText(node, searchQuery);
+            }
         }
     });
 }
