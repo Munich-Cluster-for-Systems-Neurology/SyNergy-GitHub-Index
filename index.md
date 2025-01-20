@@ -8,6 +8,13 @@ _For more information on our research and publications, visit [the SyNergy websi
 
 ---
 
+## Search Projects
+
+<input type="text" id="searchBox" placeholder="Search projects..." onkeyup="filterProjects()" style="width: 100%; padding: 10px; margin: 15px 0; font-size: 16px;">
+
+---
+
+<div id="projectsContainer">
 <details>
   <summary>
     <h2><span class="arrow">&#9654;</span> Transcriptomics Projects</h2>
@@ -458,3 +465,21 @@ _For more information on our research and publications, visit [the SyNergy websi
   <hr>
   
 </details>
+</div>
+
+<script>
+function filterProjects() {
+  const searchInput = document.getElementById('searchBox').value.toLowerCase();
+  const projectContainer = document.getElementById('projectsContainer');
+  const projects = projectContainer.getElementsByTagName('details');
+
+  Array.from(projects).forEach((project) => {
+    const textContent = project.textContent || project.innerText;
+    if (textContent.toLowerCase().includes(searchInput)) {
+      project.style.display = '';
+    } else {
+      project.style.display = 'none';
+    }
+  });
+}
+</script>
