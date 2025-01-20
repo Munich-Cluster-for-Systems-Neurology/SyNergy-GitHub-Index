@@ -10,12 +10,11 @@ _For more information on our research and publications, visit [the SyNergy websi
 
 ## Search Projects
 
-<!-- <input type="text" id="searchBox" placeholder="Search projects..." oninput="filterProjects()" style="width: 97%; padding: 10px; margin: 0px 0; font-size: 16px;"> -->
-<input type="text" id="searchBox" placeholder="Search projects..." style="width: 97%; padding: 10px; margin: 0px 0; font-size: 16px;">
+<input type="text" id="searchBox" placeholder="Search projects..." oninput="filterProjects()" style="width: 97%; padding: 10px; margin: 0px 0; font-size: 16px;">
 
 ---
 
-<!-- <div id="projectsContainer"> -->
+<div id="projectsContainer">
 <details>
   <summary>
     <h2><span class="arrow">&#9654;</span> Transcriptomics Projects</h2>
@@ -466,13 +465,13 @@ _For more information on our research and publications, visit [the SyNergy websi
   <hr>
   
 </details>
-<!-- </div> -->
+</div>
 
 
 <!-- Inline JavaScript -->
 <script>
-document.getElementById('searchInput').addEventListener('input', function() {
-    var searchQuery = this.value.toLowerCase(); // Get search input and convert it to lowercase
+function filterProjects() {
+ var searchQuery = this.value.toLowerCase(); // Get search input and convert it to lowercase
     var detailsBlocks = document.querySelectorAll('details'); // Select all <details> elements
 
     detailsBlocks.forEach(function(details) {
@@ -505,5 +504,5 @@ document.getElementById('searchInput').addEventListener('input', function() {
             ul.style.display = 'none';   // Hide the <ul> element if no match
         }
     });
-});
+}
 </script>
