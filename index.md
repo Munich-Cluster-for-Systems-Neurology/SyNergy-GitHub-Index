@@ -471,58 +471,73 @@ _For more information on our research and publications, visit [the SyNergy websi
 <!-- Inline JavaScript -->
 <script>
 function filterProjects(searchQuery) {
-    if (!searchQuery) searchQuery = ''; // Ensure searchQuery is always defined
+    if (!searchQuery) searchQuery = ''; // Ensure searchQuery is defined
     searchQuery = searchQuery.toLowerCase(); // Convert search query to lowercase
 
-    const detailsBlocks = document.querySelectorAll('details'); // Select all <details> elements
+    // Select all <details> elements
+    const detailsBlocks = document.querySelectorAll('details');
 
     detailsBlocks.forEach((details) => {
-        const headings = details.querySelectorAll('h3'); // Select all <h3> elements
-        const lists = details.querySelectorAll('ul'); // Select all <ul> elements
-        let matchFound = false; // Track whether there's a match within this <details> block
+        const h3Blocks = details.querySelectorAll('h3'); // Find all <h3> elements within the <details>
+        let detailsMatch = false; // Track if any match is found within this <details>
 
-        // Process all <h3> elements
-        headings.forEach((h3) => {
-            removeHighlights(h3); // Clear previous highlights
+        h3Blocks.forEach((h3) => {
+            let matchFound = false;
 
-            if (h3.textContent.toLowerCase().includes(searchQuery)) {
-                matchFound = true;
-                highlightText(h3, searchQuery); // Highlight matched text
-                h3.style.display = 'block'; // Ensure the <h3> is displayed
-            } else {
-                h3.style.display = 'none'; // Hide non-matching <h3>
+            // Collect all siblings (P, UL, HR) related to the current <h3>
+            const groupElements = [];
+            let sibling = h3.nextElementSibling;
+
+            while (sibling && (sibling.tagName === 'P' || sibling.tagName === 'UL' || sibling.tagName === 'HR')) {
+                groupElements.push(sibling);
+                sibling = sibling.nextElementSibling;
             }
-        });
 
-        // Process all <ul> elements and their <li> children
-        lists.forEach((ul) => {
-            let ulMatch = false; // Track matches within this <ul>
-
-            ul.querySelectorAll('li').forEach((li) => {
-                removeHighlights(li); // Clear previous highlights
-
-                if (li.textContent.toLowerCase().includes(searchQuery)) {
-                    ulMatch = true;
-                    highlightText(li, searchQuery); // Highlight matched text
-                    li.style.display = 'block'; // Ensure the <li> is displayed
-                } else {
-                    li.style.display = 'none'; // Hide non-matching <li>
+            // Reset highlights for <h3> and siblings
+            removeHighlights(h3);
+            groupElements.forEach((element) => {
+                if (element.tagName === 'UL') {
+                    element.querySelectorAll('li').forEach(removeHighlights);
                 }
             });
 
-            if (ulMatch) {
+            // Check for matches in <h3>
+            if (h3.textContent.toLowerCase().includes(searchQuery)) {
                 matchFound = true;
-                ul.style.display = 'block'; // Ensure the <ul> is displayed
+                detailsMatch = true; // At least one match within the <details>
+                highlightText(h3, searchQuery); // Highlight matched text in <h3>
+            }
+
+            // Check for matches in <li> elements
+            groupElements.forEach((element) => {
+                if (element.tagName === 'UL') {
+                    element.querySelectorAll('li').forEach((li) => {
+                        if (li.textContent.toLowerCase().includes(searchQuery)) {
+                            matchFound = true;
+                            detailsMatch = true; // At least one match within the <details>
+                            highlightText(li, searchQuery); // Highlight matched text in <li>
+                        }
+                    });
+                }
+            });
+
+            // Show or hide the current <h3> and its siblings based on whether a match was found
+            if (matchFound) {
+                h3.style.display = 'block'; // Show the matched <h3>
+                groupElements.forEach((element) => (element.style.display = 'block')); // Show all siblings
             } else {
-                ul.style.display = 'none'; // Hide non-matching <ul>
+                h3.style.display = 'none'; // Hide the unmatched <h3>
+                groupElements.forEach((element) => (element.style.display = 'none')); // Hide all siblings
             }
         });
 
-        // Expand/collapse <details> based on matches
-        if (matchFound) {
-            details.setAttribute('open', 'open'); // Expand <details>
+        // Expand or collapse the <details> block based on whether any match was found
+        if (detailsMatch) {
+            details.style.display = 'block'; // Show the <details> block
+            details.setAttribute('open', 'open'); // Expand the <details> block
         } else {
-            details.removeAttribute('open'); // Collapse <details>
+            details.style.display = 'none'; // Hide the entire <details> block
+            details.removeAttribute('open'); // Collapse the <details> block
         }
     });
 }
@@ -538,7 +553,7 @@ function removeHighlights(element) {
     element.innerHTML = element.textContent; // Reset element to plain text
 }
 
-// Add event listener to search input
+// Add event listener to the search input
 document.getElementById('searchInput').addEventListener('input', function () {
     filterProjects(this.value); // Pass the input value to the filterProjects function
 });
