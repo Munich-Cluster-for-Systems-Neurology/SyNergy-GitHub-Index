@@ -507,7 +507,7 @@ function filterProjects() {
             }
         }
 
-        // Show or hide the entire <details> element based on matches within it
+        // Show or hide the entire <details> element based on matches inside it
         if (matchFound) {
             details[i].style.display = "";  // Show the <details> if there's a match inside
         } else {
