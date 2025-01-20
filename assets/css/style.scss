@@ -86,8 +86,8 @@ details[open] > summary .arrow {
 
 header {
   margin-top: -20px; /* Add a small margin at the top */
-  width: 80%; /* Adjust the width for responsiveness */
-  max-width: 500px; /* Ensure the header doesn't grow too wide on large screens */
+  width: 25%; /* Adjust the width for responsiveness */
+  max-width: 1440px; /* Ensure the header doesn't grow too wide on large screens */
   display: flex; /* Enable Flexbox */
   flex-direction: column; /* Stack header items vertically */
   justify-content: flex-start; /* Align header items at the top */
