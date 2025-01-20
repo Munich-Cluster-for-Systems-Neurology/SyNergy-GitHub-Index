@@ -1,15 +1,7 @@
----
----
-
 @import "{{ site.theme }}"; /* Import the theme styles */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
-/* Custom styles */
-
-h1 a {
-    display: none;
-}
-
+/* Base styles for larger screens */
 body {
   background-color: #162c23;
   padding: 50px;
@@ -21,30 +13,29 @@ body {
 section {
   background-color: #ffffff;
   padding: 20px;
-  width: 100%; /* Adjust width to be responsive */
-  max-width: 1200px; /* Optional: You can set a max-width to limit stretching on very large screens */
-  margin: 0 auto; /* Center the section */
+  width: 100%;
+  margin: 0 auto;
 }
 
 section p {
-    color: #3e4a45;
+  color: #3e4a45;
 }
 
 section p a {
-    float: right;
+  float: right;
 }
 
 section p em a {
-    position: relative;
-    float: none;
+  position: relative;
+  float: none;
 }
 
 section li::marker {
-    color: #3e4a45;
+  color: #3e4a45;
 }
 
 section strong {
-    color: #3e4a45;
+  color: #3e4a45;
 }
 
 section ul {
@@ -53,14 +44,14 @@ section ul {
 }
 
 section hr {
-    border: 0;
-    height: 1px;
-    background-color: #d5d5d5;
-    margin: 20px auto;
+  border: 0;
+  height: 1px;
+  background-color: #d5d5d5;
+  margin: 20px auto;
 }
 
 section a {
-    color: #4a9476;
+  color: #4a9476;
 }
 
 details > summary {
@@ -82,120 +73,94 @@ details[open] > summary .arrow {
   transform: rotate(90deg);
 }
 
+/* Header styles */
 header {
-    margin-left: 0;
-    margin-top: 20px;
-    width: 100%;
-    text-align: center;
+  margin-left: -360px;
+  margin-top: -20px;
+  width: 400px;
 }
 
 img[src="/SyNergy-GitHub-Index/assets/img/logo.png"] {
-    max-width: 100%; /* Make logo responsive */
-    display: inline-block;
+  max-width: 150%;
+  display: inline-block;
 }
 
 header p {
-    padding-top: 50px;
-    width: 100%; /* Use width 100% for responsiveness */
-    line-height: 2;
+  padding-top: 50px;
+  width: 405px;
+  line-height: 2;
 }
 
 header p.view {
-    display: none;
+  display: none;
 }
 
 h1 {
-    color: #162c23;
-    font-size: 25px;
-    font-weight: 700;
+  color: #162c23;
+  font-size: 25px;
+  font-weight: 700;
 }
 
 h2 {
-    color: #4a9476;
-    font-size: 20px;
-    font-weight: 500;
-    margin: 20px 0;
+  color: #4a9476;
+  font-size: 20px;
+  font-weight: 500;
+  margin: 20px 0;
 }
 
 a {
-    color: #6ea991;
+  color: #6ea991;
 }
 
 a:hover {
-    color: #6ea991;
+  color: #6ea991;
 }
 
 footer {
-    margin-left: 0;
-    width: 100%;
-    text-align: center;
+  margin-left: -350px;
+  width: 405px;
 }
 
 .highlight {
-    background-color: yellow;
-    color: inherit;
-    font-weight: bold;
+  background-color: yellow;
+  color: inherit;
+  font-weight: bold;
 }
 
-/* Media Queries for responsiveness */
+/* Media query for screens with a maximum width of 768px */
+@media (max-width: 768px) {
+  body {
+    padding: 20px;
+    font-size: 14px;
+  }
 
-/* For smaller screens like phones and tablets */
-@media screen and (max-width: 768px) {
-    body {
-        padding: 20px;
-        font-size: 14px;
-    }
+  section {
+    padding: 15px;
+    width: 90%;
+  }
 
-    header p {
-        width: 100%;
-        padding-top: 20px;
-    }
+  header {
+    margin-left: 0;
+    margin-top: 0;
+    width: 100%;
+  }
 
-    section {
-        padding: 10px;
-    }
+  header p {
+    padding-top: 20px;
+    width: 100%;
+    line-height: 1.5;
+  }
 
-    h1 {
-        font-size: 22px;
-    }
+  h1 {
+    font-size: 22px;
+  }
 
-    h2 {
-        font-size: 18px;
-    }
+  h2 {
+    font-size: 18px;
+  }
 
-    img[src="/SyNergy-GitHub-Index/assets/img/logo.png"] {
-        max-width: 100%;
-    }
-
-    section p a {
-        font-size: 14px;
-    }
-}
-
-/* For extra small screens like mobile devices */
-@media screen and (max-width: 480px) {
-    body {
-        padding: 10px;
-        font-size: 12px;
-    }
-
-    h1 {
-        font-size: 20px;
-    }
-
-    h2 {
-        font-size: 16px;
-    }
-
-    header p {
-        padding-top: 10px;
-    }
-
-    section {
-        padding: 5px;
-    }
-
-    section p a {
-        font-size: 12px;
-    }
+  footer {
+    margin-left: 0;
+    width: 100%;
+  }
 }
