@@ -548,17 +548,26 @@ function removeHighlights(element) {
     element.innerHTML = element.innerHTML.replace(regex, '$1');
 }
 
-// Updated highlight function (with <a> tag fix)
+// Function to highlight matched text
 function highlightText(element, searchQuery) {
     const regex = new RegExp(`(${searchQuery})`, 'gi');
 
-    if (element.tagName === 'A') {
-        const originalText = element.textContent;
-        const highlightedText = originalText.replace(regex, '<span class="highlight">$1</span>');
-        element.innerHTML = highlightedText;
-    } else {
-        element.innerHTML = element.textContent.replace(regex, '<span class="highlight">$1</span>');
-    }
+    // Process child nodes recursively to preserve the structure
+    element.childNodes.forEach(node => {
+        if (node.nodeType === Node.TEXT_NODE) {
+            // If the node is a text node, replace matching text
+            const parent = node.parentNode;
+            const highlightedText = node.textContent.replace(regex, '<span class="highlight">$1</span>');
+            const wrapper = document.createElement('span');
+            wrapper.innerHTML = highlightedText;
+
+            // Replace the text node with the highlighted HTML content
+            parent.replaceChild(wrapper, node);
+        } else if (node.nodeType === Node.ELEMENT_NODE) {
+            // If the child node is an element (e.g., <a>), process it recursively
+            highlightText(node, searchQuery);
+        }
+    });
 }
 
 // Add event listener to the search input
