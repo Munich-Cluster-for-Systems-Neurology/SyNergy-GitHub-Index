@@ -550,32 +550,24 @@ function removeHighlights(element) {
 
 // Function to highlight matched text within an element, including nested <ul> and <li>
 function highlightText(element, searchQuery) {
-    const regex = new RegExp(`(${searchQuery})`, 'gi'); // Case-insensitive match
-    
-    // Loop through each child node of the element
+    const regex = new RegExp(`(${searchQuery})`, 'gi');
+
+    // Process child nodes recursively to preserve the structure
     element.childNodes.forEach(node => {
         if (node.nodeType === Node.TEXT_NODE) {
-            // If it's a text node, replace matching text
+            // If the node is a text node, replace matching text
             const parent = node.parentNode;
             const highlightedText = node.textContent.replace(regex, '<span class="highlight">$1</span>');
-            
-            // Replace the text node with the highlighted HTML content
             const wrapper = document.createElement('span');
             wrapper.innerHTML = highlightedText;
+
+            // Replace the text node with the highlighted HTML content
             parent.replaceChild(wrapper, node);
-        } else if (node.nodeType === Node.ELEMENT_NODE) {
-            // If it's an element node, recursively process its children (e.g., <a>, <ul>, <li>)
-            if (node.tagName !== 'SPAN' && node.tagName !== 'A') { // Avoid reprocessing already highlighted nodes
-                highlightText(node, searchQuery);
-            }
+        } else if (node.nodeType === Node.ELEMENT_NODE && node.tagName !== 'A') {
+            // If the node is an element (but not a <a> tag), process it recursively
+            highlightText(node, searchQuery);
         }
     });
-}
-
-// Reset the content and then highlight matching text
-function resetAndHighlightElement(element, searchQuery) {
-    element.innerHTML = element.textContent; // Reset the HTML content (clear previous highlights)
-    highlightText(element, searchQuery); // Apply the new highlights
 }
 
 // Add event listener to the search input
