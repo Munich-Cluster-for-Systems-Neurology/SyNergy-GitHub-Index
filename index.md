@@ -479,7 +479,7 @@ _For more information on our research and publications, visit [the SyNergy websi
     projects.forEach(function(project) {
       // Get text content from both the <h2> and the <p> (or other relevant elements)
       const summaryText = project.querySelector("summary h2").textContent.toLowerCase();
-      const projectDetails = project.querySelector("summary + p") ? project.querySelector("summary + p").textContent.toLowerCase() : '';
+      const projectDetails = project.querySelector("p") ? project.querySelector("p").textContent.toLowerCase() : '';
 
       // Check if either the heading or the content includes the search query
       if (summaryText.includes(searchQuery) || projectDetails.includes(searchQuery)) {
