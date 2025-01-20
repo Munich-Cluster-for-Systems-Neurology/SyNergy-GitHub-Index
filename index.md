@@ -542,15 +542,23 @@ function filterProjects(searchQuery) {
     });
 }
 
-// Function to highlight matched text
-function highlightText(element, searchQuery) {
-    const regex = new RegExp(`(${searchQuery})`, 'gi'); // Case-insensitive match
-    element.innerHTML = element.textContent.replace(regex, '<span class="highlight">$1</span>'); // Add highlight span
+// Function to remove any previous highlights
+function removeHighlights(element) {
+    const regex = /<span class="highlight">(.*?)<\/span>/gi;
+    element.innerHTML = element.innerHTML.replace(regex, '$1');
 }
 
-// Function to remove any highlights
-function removeHighlights(element) {
-    element.innerHTML = element.textContent; // Reset element to plain text
+// Updated highlight function (with <a> tag fix)
+function highlightText(element, searchQuery) {
+    const regex = new RegExp(`(${searchQuery})`, 'gi');
+
+    if (element.tagName === 'A') {
+        const originalText = element.textContent;
+        const highlightedText = originalText.replace(regex, '<span class="highlight">$1</span>');
+        element.innerHTML = highlightedText;
+    } else {
+        element.innerHTML = element.textContent.replace(regex, '<span class="highlight">$1</span>');
+    }
 }
 
 // Add event listener to the search input
