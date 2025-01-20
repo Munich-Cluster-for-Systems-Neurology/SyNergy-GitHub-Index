@@ -471,60 +471,42 @@ _For more information on our research and publications, visit [the SyNergy websi
 <!-- Inline JavaScript -->
 <script>
 function filterProjects(searchQuery) {
-    if (!searchQuery) {
-        console.log("No search query provided!");
-        return; // Exit early if no search query
-    }
+    searchQuery = searchQuery.toLowerCase(); // Ensure the search query is in lowercase
+    const detailsBlocks = document.querySelectorAll('details'); // Select all <details> elements
 
-    searchQuery = searchQuery.toLowerCase(); // Convert search query to lowercase
-    var detailsBlocks = document.querySelectorAll('details'); // Select all <details> elements
+    detailsBlocks.forEach((details) => {
+        const headings = details.querySelectorAll('h3'); // Select all <h3> elements in this <details>
+        const lists = details.querySelectorAll('ul'); // Select all <ul> elements in this <details>
+        let matchFound = false; // Track whether there's a match within this <details> block
 
-    detailsBlocks.forEach(function(details) {
-        var h3 = details.querySelector('h3');
-        var ul = details.querySelector('ul');
-        var ulItems = ul ? ul.querySelectorAll('li') : []; // Ensure ul exists before querying <li> elements
-        var matchFound = false;
-
-        // Reset all previous highlights and remove the highlights
-        removeHighlights(h3); // Reset h3 content
-        ulItems.forEach(function(li) {
-            removeHighlights(li); // Reset li content
+        // Reset highlights for all headings and list items
+        headings.forEach((h3) => removeHighlights(h3));
+        lists.forEach((ul) => {
+            ul.querySelectorAll('li').forEach((li) => removeHighlights(li));
         });
 
-        // Check if <h3> matches the search query
-        if (h3 && h3.textContent.toLowerCase().includes(searchQuery)) {
-            matchFound = true;
-            highlightText(h3, searchQuery); // Highlight matched text in <h3>
-        }
-
-        // Check if any <li> inside the <ul> matches the search query
-        ulItems.forEach(function(li) {
-            if (li.textContent.toLowerCase().includes(searchQuery)) {
+        // Check matches and apply highlights
+        headings.forEach((h3) => {
+            if (h3.textContent.toLowerCase().includes(searchQuery)) {
                 matchFound = true;
-                highlightText(li, searchQuery); // Highlight matched text in <li>
+                highlightText(h3, searchQuery); // Highlight matched text in <h3>
             }
         });
 
-        // Show or hide the <h3>, <ul>, and <li> based on whether a match was found
-        if (matchFound) {
-            h3.style.display = 'block';
-            ul.style.display = 'block';
-            ulItems.forEach(function(li) {
-                li.style.display = 'block'; // Ensure all <li> items are visible if they match
+        lists.forEach((ul) => {
+            ul.querySelectorAll('li').forEach((li) => {
+                if (li.textContent.toLowerCase().includes(searchQuery)) {
+                    matchFound = true;
+                    highlightText(li, searchQuery); // Highlight matched text in <li>
+                }
             });
+        });
 
-            // Expand the <details> block if it's collapsed
-            if (!details.hasAttribute('open')) {
-                details.setAttribute('open', 'open');
-            }
+        // Show/hide details based on matches
+        if (matchFound) {
+            details.setAttribute('open', 'open'); // Expand <details> if a match is found
         } else {
-            h3.style.display = 'none';  // Hide the <h3> element if no match
-            ul.style.display = 'none';   // Hide the <ul> element if no match
-
-            // If the <details> block is expanded, collapse it if nothing matched
-            if (details.hasAttribute('open')) {
-                details.removeAttribute('open');
-            }
+            details.removeAttribute('open'); // Collapse <details> if no matches
         }
     });
 }
