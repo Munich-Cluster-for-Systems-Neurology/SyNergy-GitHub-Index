@@ -372,7 +372,7 @@ _For more information on our research and publications, visit [the SyNergy websi
 
 <details>
   <summary>
-    <h2><span class="arrow">&#9654;</span> Tutorials/Additional Resources</h2>
+    <h2><span class="arrow">&#9654;</span> Tutorials/Additional Resources Projects</h2>
   </summary>
   
   <hr>
