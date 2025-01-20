@@ -10,7 +10,7 @@ _For more information on our research and publications, visit [the SyNergy websi
 
 ## Search Projects
 
-<input type="text" id="searchBox" placeholder="Search projects..." onkeyup="filterProjects()" style="width: 100%; padding: 10px; margin: 0px 0; font-size: 16px;">
+<input type="text" id="searchBox" placeholder="Search projects..." onkeyup="filterProjects()" style="width: 100%; padding: 0px; margin: 0px 0; font-size: 16px;">
 
 ---
 
