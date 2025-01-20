@@ -10,11 +10,12 @@ _For more information on our research and publications, visit [the SyNergy websi
 
 ## Search Projects
 
-<input type="text" id="searchBox" placeholder="Search projects..." oninput="filterProjects()" style="width: 97%; padding: 10px; margin: 0px 0; font-size: 16px;">
+<!-- <input type="text" id="searchBox" placeholder="Search projects..." oninput="filterProjects()" style="width: 97%; padding: 10px; margin: 0px 0; font-size: 16px;"> -->
+<input type="text" id="searchBox" placeholder="Search projects..." style="width: 97%; padding: 10px; margin: 0px 0; font-size: 16px;">
 
 ---
 
-<div id="projectsContainer">
+<!-- <div id="projectsContainer"> -->
 <details>
   <summary>
     <h2><span class="arrow">&#9654;</span> Transcriptomics Projects</h2>
@@ -465,40 +466,44 @@ _For more information on our research and publications, visit [the SyNergy websi
   <hr>
   
 </details>
-</div>
+<!-- </div> -->
+
 
 <!-- Inline JavaScript -->
 <script>
-function filterProjects() {
-  // Get the input search query value
-  var query = document.getElementById('searchBox').value.toLowerCase();
-  
-  // Get all the h3 and associated links in the projects container
-  var projects = document.querySelectorAll('#projectsContainer h3, #projectsContainer p, #projectsContainer a');
+document.getElementById('searchInput').addEventListener('input', function() {
+    var searchQuery = this.value.toLowerCase(); // Get search input and convert it to lowercase
+    var detailsBlocks = document.querySelectorAll('details'); // Select all <details> elements
 
-  // Loop through each project element and hide or show based on query match
-  projects.forEach(function(project) {
-    var textContent = project.textContent.toLowerCase(); // Get text content
-    if (textContent.indexOf(query) > -1) {
-      // If the text matches, make it visible
-      project.style.display = "block";
-    } else {
-      // Otherwise, hide it
-      project.style.display = "none";
-    }
-  });
-  
-  // Loop through all <details> sections to control visibility based on matches
-  var details = document.querySelectorAll('#projectsContainer details');
-  details.forEach(function(detail) {
-    // If there is any matching content inside the detail, expand it, otherwise keep it collapsed
-    if (detail.querySelector('.arrow') && detail.querySelector('h3').textContent.toLowerCase().indexOf(query) > -1) {
-      detail.querySelector('summary').style.display = "block"; // Ensure visible summary
-      detail.open = true; // Expand the details section
-    } else {
-      detail.querySelector('summary').style.display = "none"; // Hide summary if no match
-      detail.open = false; // Collapse section if no match inside
-    }
-  });
-}
+    detailsBlocks.forEach(function(details) {
+        var h3 = details.querySelector('h3');
+        var ul = details.querySelector('ul');
+        var ulItems = ul.querySelectorAll('li');
+        var matchFound = false;
+
+        // Check if <h3> matches the search query
+        if (h3 && h3.textContent.toLowerCase().includes(searchQuery)) {
+            matchFound = true;
+        }
+
+        // Check if any <li> inside the <ul> matches the search query
+        ulItems.forEach(function(li) {
+            if (li.textContent.toLowerCase().includes(searchQuery)) {
+                matchFound = true;
+            }
+        });
+
+        // Show or hide the <h3>, <ul>, and <li> based on whether a match was found
+        if (matchFound) {
+            h3.style.display = 'block';
+            ul.style.display = 'block';
+            ulItems.forEach(function(li) {
+                li.style.display = 'block'; // Ensure all <li> items are visible if they match
+            });
+        } else {
+            h3.style.display = 'none';  // Hide the <h3> element if no match
+            ul.style.display = 'none';   // Hide the <ul> element if no match
+        }
+    });
+});
 </script>
