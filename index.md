@@ -467,24 +467,20 @@ _For more information on our research and publications, visit [the SyNergy websi
 </details>
 </div>
 
+<!-- Inline JavaScript -->
 <script>
-function filterProjects() {
-  // Get the input value
-  const searchQuery = document.getElementById("searchBox").value.toLowerCase();
+  function filterProjects() {
+    const searchQuery = document.getElementById("searchBox").value.toLowerCase();
+    const projects = document.querySelectorAll(".project");
+    
+    projects.forEach(function(project) {
+      const summary = project.querySelector("summary h2").textContent.toLowerCase();
 
-  // Get all project sections (details elements)
-  const projects = document.querySelectorAll(".project");
-
-  // Loop through each project and hide/show based on the search query
-  projects.forEach(function(project) {
-    const summary = project.querySelector("summary h2").textContent.toLowerCase();
-
-    // If the summary text matches the search query, display the project, else hide it
-    if (summary.includes(searchQuery)) {
-      project.style.display = "block";
-    } else {
-      project.style.display = "none";
-    }
-  });
-}
+      if (summary.includes(searchQuery)) {
+        project.style.display = "block";
+      } else {
+        project.style.display = "none";
+      }
+    });
+  }
 </script>
