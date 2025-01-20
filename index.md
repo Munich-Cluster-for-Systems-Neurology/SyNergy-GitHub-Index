@@ -470,28 +470,33 @@ _For more information on our research and publications, visit [the SyNergy websi
 
 <!-- Inline JavaScript -->
 <script>
-// Function to filter projects based on search input
 function filterProjects() {
-    var searchInput = document.getElementById('searchInput');  // Get the search input element
-    var searchQuery = searchInput.value.toLowerCase();  // Get the value of the input and convert it to lowercase
-
-    var detailsBlocks = document.querySelectorAll('details');  // Select all <details> elements
+    var searchQuery = this.value.toLowerCase(); // Get search input and convert it to lowercase
+    var detailsBlocks = document.querySelectorAll('details'); // Select all <details> elements
 
     detailsBlocks.forEach(function(details) {
         var h3 = details.querySelector('h3');
         var ul = details.querySelector('ul');
-        var ulItems = ul ? ul.querySelectorAll('li') : [];  // Ensure ul exists before querying <li> elements
+        var ulItems = ul ? ul.querySelectorAll('li') : []; // Ensure ul exists before querying <li> elements
         var matchFound = false;
+
+        // Reset all previous highlights
+        h3.innerHTML = h3.textContent; // Reset h3 content
+        ulItems.forEach(function(li) {
+            li.innerHTML = li.textContent; // Reset li content
+        });
 
         // Check if <h3> matches the search query
         if (h3 && h3.textContent.toLowerCase().includes(searchQuery)) {
             matchFound = true;
+            highlightText(h3, searchQuery); // Highlight matched text in <h3>
         }
 
         // Check if any <li> inside the <ul> matches the search query
         ulItems.forEach(function(li) {
             if (li.textContent.toLowerCase().includes(searchQuery)) {
                 matchFound = true;
+                highlightText(li, searchQuery); // Highlight matched text in <li>
             }
         });
 
@@ -503,9 +508,9 @@ function filterProjects() {
                 li.style.display = 'block'; // Ensure all <li> items are visible if they match
             });
 
-            // If <details> is collapsed, ensure the user can see the relevant part
+            // Expand the <details> block if it's collapsed
             if (!details.hasAttribute('open')) {
-                details.setAttribute('open', 'open'); // Expand the <details> element if it matched
+                details.setAttribute('open', 'open');
             }
         } else {
             h3.style.display = 'none';  // Hide the <h3> element if no match
@@ -519,8 +524,21 @@ function filterProjects() {
     });
 }
 
+// Function to highlight matched text
+function highlightText(element, searchQuery) {
+    var regex = new RegExp('(' + searchQuery + ')', 'gi'); // Case-insensitive search
+    element.innerHTML = element.textContent.replace(regex, '<span class="highlight">$1</span>'); // Wrap matched text in <span>
+}
+
 // Listen for input on the search field to filter projects
 document.getElementById('searchInput').addEventListener('input', function() {
-    filterProjects();  // Trigger the filtering when user types in the search input
+    filterProjects.call(this);  // Trigger the filtering when user types in the search input
+});
+
+// Optional: Expand details block when the arrow is clicked
+document.querySelectorAll('details').forEach(function(details) {
+    details.addEventListener('toggle', function() {
+        // Add logic if you want to do something when the details are toggled
+    });
 });
 </script>
