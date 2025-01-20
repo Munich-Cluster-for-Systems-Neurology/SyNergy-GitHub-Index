@@ -21,13 +21,11 @@ body {
 section {
   background-color: #ffffff;
   padding: 20px;
-  width: 100%; /* Allow width to be fluid */
-  max-width: 1440px; /* Set max-width for larger screens */
-  margin: 0 auto; /* Center the content */
-  display: flex; /* Flexbox for responsive layout */
-  justify-content: flex-end; /* Align content to the right */
-  flex-wrap: wrap; /* Allow wrapping of content */
-  gap: 20px; /* Optional: Adds spacing between elements */
+  width: 120%;
+  margin-right: -360px;
+  display: flex;  /* Enable Flexbox */
+  flex-direction: column; /* Stack section items vertically */
+  justify-content: flex-start; /* Align content at the top */
 }
 
 section p {
@@ -89,7 +87,7 @@ details[open] > summary .arrow {
 header {
   margin-left: -360px;
   margin-top: -20px;
-  width: 400px;
+  width: 100%;
   display: flex; /* Enable Flexbox */
   flex-direction: column; /* Stack header items vertically */
   justify-content: flex-start; /* Align header items at the top */
@@ -149,12 +147,12 @@ footer {
     font-size: 14px;
   }
 
-section {
-    padding: 15px; /* Adjust section padding */
-    max-width: 100%; /* Ensure section is responsive and takes full width */
-    justify-content: center; /* Center align content for smaller screens */
-    flex-direction: column; /* Stack section content vertically */
-    margin-top: 20px; /* Add top margin to create space between section and header */
+  section {
+    padding: 15px;
+    width: 100%;
+    margin-right: 0;
+    margin-left: 0;
+    justify-content: flex-end; /* Push content to the bottom */
   }
 
   header {
