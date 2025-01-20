@@ -566,14 +566,12 @@ function highlightText(element, searchQuery) {
         } else if (node.nodeType === Node.ELEMENT_NODE) {
             // If the child node is an <a> tag, process it
             if (node.tagName === 'A') {
-                // Only highlight the text content inside <a> tag
-                const textNodes = Array.from(node.childNodes).filter(child => child.nodeType === Node.TEXT_NODE);
-                textNodes.forEach(textNode => {
-                    const highlightedText = textNode.textContent.replace(regex, '<span class="highlight">$1</span>');
-                    const wrapper = document.createElement('span');
-                    wrapper.innerHTML = highlightedText;
-                    textNode.replaceWith(wrapper);
-                });
+                // Process text content of <a> tags
+                const textContent = node.textContent;
+                const highlightedText = textContent.replace(regex, '<span class="highlight">$1</span>');
+                
+                // Replace the original text content of the <a> tag with the highlighted version
+                node.innerHTML = highlightedText;  // Directly update innerHTML for <a> tags
             } else {
                 // If the child node is an element (not <a>), process it recursively
                 highlightText(node, searchQuery);
