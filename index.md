@@ -470,30 +470,35 @@ _For more information on our research and publications, visit [the SyNergy websi
 <!-- Inline JavaScript -->
 <script>
 function filterProjects() {
-    const details = document.querySelectorAll('details');
-    
-    details.forEach(detail => {
-        // Check for the elements to search within
-        const summary = detail.querySelector('summary');
-        const h3 = detail.querySelector('h3');
-        const ul = detail.querySelector('ul');
-        const li = detail.querySelectorAll('li');
-        
-        // Function to extract the text content and match it against the query
-        const containsQuery = (element) => {
-            return element ? element.textContent.toLowerCase().includes(query.toLowerCase()) : false;
-        };
-        
-        // Check if any of the elements contain the search query
-        const matches = [
-            containsQuery(summary),
-            containsQuery(h3),
-            containsQuery(ul),
-            Array.from(li).some(item => containsQuery(item))  // Check each <li> element
-        ].some(Boolean);  // If any match, return true
+  // Get the input search query value
+  var query = document.getElementById('searchBox').value.toLowerCase();
+  
+  // Get all the h3 and associated links in the projects container
+  var projects = document.querySelectorAll('#projectsContainer h3, #projectsContainer p, #projectsContainer a');
 
-        // Show or hide the <details> block based on whether a match was found
-        detail.style.display = matches ? 'block' : 'none';
-    });
+  // Loop through each project element and hide or show based on query match
+  projects.forEach(function(project) {
+    var textContent = project.textContent.toLowerCase(); // Get text content
+    if (textContent.indexOf(query) > -1) {
+      // If the text matches, make it visible
+      project.style.display = "block";
+    } else {
+      // Otherwise, hide it
+      project.style.display = "none";
+    }
+  });
+  
+  // Loop through all <details> sections to control visibility based on matches
+  var details = document.querySelectorAll('#projectsContainer details');
+  details.forEach(function(detail) {
+    // If there is any matching content inside the detail, expand it, otherwise keep it collapsed
+    if (detail.querySelector('.arrow') && detail.querySelector('h3').textContent.toLowerCase().indexOf(query) > -1) {
+      detail.querySelector('summary').style.display = "block"; // Ensure visible summary
+      detail.open = true; // Expand the details section
+    } else {
+      detail.querySelector('summary').style.display = "none"; // Hide summary if no match
+      detail.open = false; // Collapse section if no match inside
+    }
+  });
 }
 </script>
