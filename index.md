@@ -10,7 +10,7 @@ _For more information on our research and publications, visit [the SyNergy websi
 
 ## Search Projects
 
-<input type="text" id="searchBox" placeholder="Search projects..." onkeyup="filterProjects()" style="width: 90%; padding: 10px; margin: 0px 0; font-size: 16px;">
+<input type="text" id="searchBox" placeholder="Search projects..." oninput="filterProjects()" style="width: 95%; padding: 10px; margin: 0px 0; font-size: 16px;">
 
 ---
 
@@ -469,17 +469,22 @@ _For more information on our research and publications, visit [the SyNergy websi
 
 <script>
 function filterProjects() {
-  const input = document.getElementById("search-input");
-  const filter = input.value.toLowerCase();
-  const container = document.getElementById("projectsContainer");
-  const dropdownItems = container.getElementsByClassName("dropdown-item");  // Selecting the actual dropdown items
-  
-  for (let item of dropdownItems) {
-    if (item.textContent.toLowerCase().includes(filter)) {
-      item.style.display = ""; // Show matching items
+  // Get the input value
+  const searchQuery = document.getElementById("searchBox").value.toLowerCase();
+
+  // Get all project sections (details elements)
+  const projects = document.querySelectorAll(".project");
+
+  // Loop through each project and hide/show based on the search query
+  projects.forEach(function(project) {
+    const summary = project.querySelector("summary h2").textContent.toLowerCase();
+
+    // If the summary text matches the search query, display the project, else hide it
+    if (summary.includes(searchQuery)) {
+      project.style.display = "block";
     } else {
-      item.style.display = "none"; // Hide non-matching items
+      project.style.display = "none";
     }
-  }
+  });
 }
 </script>
