@@ -563,9 +563,15 @@ function highlightText(element, searchQuery) {
 
             // Replace the text node with the highlighted HTML content
             parent.replaceChild(wrapper, node);
-        } else if (node.nodeType === Node.ELEMENT_NODE && node.tagName !== 'A') {
-            // If the node is an element (but not a <a> tag), process it recursively
-            highlightText(node, searchQuery);
+        } else if (node.nodeType === Node.ELEMENT_NODE) {
+            // If the element is a link (<a>), process it differently to only highlight the text inside
+            if (node.tagName === 'A') {
+                // Only highlight the text content inside <a> tag
+                highlightText(node, searchQuery);
+            } else {
+                // If the child node is an element (not a <a> tag), process it recursively
+                highlightText(node, searchQuery);
+            }
         }
     });
 }
