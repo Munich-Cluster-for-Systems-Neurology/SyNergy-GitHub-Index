@@ -471,7 +471,7 @@ _For more information on our research and publications, visit [the SyNergy websi
 <!-- Inline JavaScript -->
 <script>
 function filterProjects() {
- var searchQuery = this.value.toLowerCase(); // Get search input and convert it to lowercase
+var searchQuery = this.value.toLowerCase(); // Get search input and convert it to lowercase
     var detailsBlocks = document.querySelectorAll('details'); // Select all <details> elements
 
     detailsBlocks.forEach(function(details) {
@@ -499,10 +499,25 @@ function filterProjects() {
             ulItems.forEach(function(li) {
                 li.style.display = 'block'; // Ensure all <li> items are visible if they match
             });
+
+            // If <details> is collapsed, ensure the user can see the relevant part
+            if (!details.hasAttribute('open')) {
+                details.setAttribute('open', 'open'); // Expand the <details> element if it matched
+            }
         } else {
             h3.style.display = 'none';  // Hide the <h3> element if no match
             ul.style.display = 'none';   // Hide the <ul> element if no match
+
+            // If the <details> block is expanded, collapse it if nothing matched
+            if (details.hasAttribute('open')) {
+                details.removeAttribute('open');
+            }
         }
     });
 }
+
+// Listen for input on the search field to filter projects
+document.getElementById('searchInput').addEventListener('input', function() {
+    filterProjects();  // Trigger the filtering when user types in the search input
+});
 </script>
