@@ -1,3 +1,5 @@
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 # Index of GitHub Repositories
 
 Here you can explore GitHub repositories associated with SyNergy projects, and links to their related publications.
