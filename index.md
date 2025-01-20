@@ -469,24 +469,45 @@ _For more information on our research and publications, visit [the SyNergy websi
 
 <!-- Inline JavaScript -->
 <script>
-  // Add event listener for real-time filtering on input
-  document.getElementById("searchBox").addEventListener("input", filterProjects);
+function filterProjects() {
+    var input, filter, container, details, h3, ul, li, i, txtValue, matchFound;
+    input = document.getElementById("searchBox");
+    filter = input.value.toLowerCase();
+    container = document.getElementById("projectsContainer");
+    details = container.getElementsByTagName("details");
 
-  function filterProjects() {
-    const searchQuery = document.getElementById("searchBox").value.toLowerCase().trim();
-    const projects = document.querySelectorAll(".project");
-    
-    projects.forEach(function(project) {
-      // Get text content from both the <h2> and the <p> (or other relevant elements)
-      const summaryText = project.querySelector("summary h2").textContent.toLowerCase();
-      const projectDetails = project.querySelector("p") ? project.querySelector("p").textContent.toLowerCase() : '';
+    // Loop through all details elements
+    for (i = 0; i < details.length; i++) {
+        h3 = details[i].getElementsByTagName("h3")[0];
+        ul = details[i].getElementsByTagName("ul")[0];
+        matchFound = false;
 
-      // Check if either the heading or the content includes the search query
-      if (summaryText.includes(searchQuery) || projectDetails.includes(searchQuery)) {
-        project.style.display = "block";
-      } else {
-        project.style.display = "none";
-      }
-    });
-  }
+        // Check h3 element
+        if (h3) {
+            txtValue = h3.textContent || h3.innerText;
+            if (txtValue.toLowerCase().indexOf(filter) > -1) {
+                matchFound = true;
+            }
+        }
+
+        // Check ul list items
+        if (ul) {
+            li = ul.getElementsByTagName("li");
+            for (var j = 0; j < li.length; j++) {
+                txtValue = li[j].textContent || li[j].innerText;
+                if (txtValue.toLowerCase().indexOf(filter) > -1) {
+                    matchFound = true;
+                    break;  // No need to continue checking other <li> elements once a match is found
+                }
+            }
+        }
+
+        // Show or hide the details element based on whether a match was found
+        if (matchFound) {
+            details[i].style.display = "";
+        } else {
+            details[i].style.display = "none";
+        }
+    }
+}
 </script>
