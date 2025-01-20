@@ -485,10 +485,10 @@ function filterProjects(searchQuery) {
         var ulItems = ul ? ul.querySelectorAll('li') : []; // Ensure ul exists before querying <li> elements
         var matchFound = false;
 
-        // Reset all previous highlights
-        h3.innerHTML = h3.textContent; // Reset h3 content
+        // Reset all previous highlights and remove the highlights
+        removeHighlights(h3); // Reset h3 content
         ulItems.forEach(function(li) {
-            li.innerHTML = li.textContent; // Reset li content
+            removeHighlights(li); // Reset li content
         });
 
         // Check if <h3> matches the search query
@@ -529,10 +529,19 @@ function filterProjects(searchQuery) {
     });
 }
 
-// Function to highlight matched text
+// Function to highlight matched text within an element
 function highlightText(element, searchQuery) {
     var regex = new RegExp('(' + searchQuery + ')', 'gi'); // Case-insensitive search
-    element.innerHTML = element.textContent.replace(regex, '<span class="highlight">$1</span>'); // Wrap matched text in <span>
+    var innerHTML = element.innerHTML;
+    element.innerHTML = innerHTML.replace(regex, '<span class="highlight">$1</span>'); // Wrap matched text in <span>
+}
+
+// Function to remove any previous highlights
+function removeHighlights(element) {
+    var regex = /<span class="highlight">.*?<\/span>/gi;
+    element.innerHTML = element.innerHTML.replace(regex, function(match) {
+        return match.replace(/<span class="highlight">|<\/span>/gi, ''); // Remove the highlight span tags
+    });
 }
 
 document.getElementById('searchInput').addEventListener('input', function() {
