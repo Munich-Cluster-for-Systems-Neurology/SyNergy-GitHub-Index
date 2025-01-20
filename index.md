@@ -470,45 +470,30 @@ _For more information on our research and publications, visit [the SyNergy websi
 <!-- Inline JavaScript -->
 <script>
 function filterProjects() {
-    var input, filter, container, details, h3, ul, li, em, i, txtValue, matchFound;
+    const details = document.querySelectorAll('details');
+    
+    details.forEach(detail => {
+        // Check for the elements to search within
+        const summary = detail.querySelector('summary');
+        const h3 = detail.querySelector('h3');
+        const ul = detail.querySelector('ul');
+        const li = detail.querySelectorAll('li');
+        
+        // Function to extract the text content and match it against the query
+        const containsQuery = (element) => {
+            return element ? element.textContent.toLowerCase().includes(query.toLowerCase()) : false;
+        };
+        
+        // Check if any of the elements contain the search query
+        const matches = [
+            containsQuery(summary),
+            containsQuery(h3),
+            containsQuery(ul),
+            Array.from(li).some(item => containsQuery(item))  // Check each <li> element
+        ].some(Boolean);  // If any match, return true
 
-    input = document.getElementById("searchBox");
-    filter = input.value.toLowerCase();
-    container = document.getElementById("projectsContainer");
-    details = container.getElementsByTagName("details");
-
-    // Loop through all details elements
-    for (i = 0; i < details.length; i++) {
-        h3 = details[i].getElementsByTagName("h3")[0];
-        ul = details[i].getElementsByTagName("ul")[0];
-        matchFound = false; // Track if any match is found in the current block
-
-        // Check if h3 matches the search query
-        if (h3) {
-            txtValue = h3.textContent || h3.innerText;
-            if (txtValue.toLowerCase().indexOf(filter) > -1) {
-                matchFound = true;
-            }
-        }
-
-        // Check if any li elements within the ul match the search query
-        if (ul) {
-            var liItems = ul.getElementsByTagName("li");
-            for (var j = 0; j < liItems.length; j++) {
-                txtValue = liItems[j].textContent || liItems[j].innerText;
-                if (txtValue.toLowerCase().indexOf(filter) > -1) {
-                    matchFound = true;
-                    break; // Exit loop as we've found a match in the list
-                }
-            }
-        }
-
-        // Show or hide the block based on whether a match was found
-        if (matchFound) {
-            details[i].style.display = "";  // Show the block if a match is found
-        } else {
-            details[i].style.display = "none";  // Hide the block if no match
-        }
-    }
+        // Show or hide the <details> block based on whether a match was found
+        detail.style.display = matches ? 'block' : 'none';
+    });
 }
 </script>
