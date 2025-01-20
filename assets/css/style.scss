@@ -1,7 +1,10 @@
+---
+---
+
 @import "{{ site.theme }}"; /* Import the theme styles */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
-/* Base styles for larger screens */
+/* Custom styles */
 body {
   background-color: #162c23;
   padding: 50px;
