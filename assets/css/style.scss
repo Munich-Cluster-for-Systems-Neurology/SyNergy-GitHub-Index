@@ -85,10 +85,10 @@ details[open] > summary .arrow {
 }
 
 header {
-  margin-left: -360px;
+  margin-left: 0px;
   margin-top: -20px; /* Add a small margin at the top */
   width: 400px; /* Adjust the width for responsiveness */
-  max-width: 1700px; /* Ensure the header doesn't grow too wide on large screens */
+  max-width: 1200px; /* Ensure the header doesn't grow too wide on large screens */
   display: flex; /* Enable Flexbox */
   flex-direction: column; /* Stack header items vertically */
   justify-content: flex-start; /* Align header items at the top */
@@ -143,7 +143,7 @@ footer {
 }
 
 /* Media query for screens with a maximum width of 768px */
-@media (max-width: 1700px) {
+@media (max-width: 768px) {
   body {
     padding: 20px;
     font-size: 14px;
