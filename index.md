@@ -470,7 +470,7 @@ _For more information on our research and publications, visit [the SyNergy websi
 <!-- Inline JavaScript -->
 <script>
 function filterProjects() {
-    var input, filter, container, details, h3, ul, li, i, txtValue, matchFound;
+    var input, filter, container, details, h3, ul, li, i, j, txtValue, matchFound;
     input = document.getElementById("searchBox");
     filter = input.value.toLowerCase();
     container = document.getElementById("projectsContainer");
@@ -487,26 +487,31 @@ function filterProjects() {
             txtValue = h3.textContent || h3.innerText;
             if (txtValue.toLowerCase().indexOf(filter) > -1) {
                 matchFound = true;
+                h3.style.display = "";  // Show the <h3> if a match is found
+            } else {
+                h3.style.display = "none";  // Hide the <h3> if no match
             }
         }
 
         // Check ul list items
         if (ul) {
-            li = ul.getElementsByTagName("li");
-            for (var j = 0; j < li.length; j++) {
-                txtValue = li[j].textContent || li[j].innerText;
+            var liElements = ul.getElementsByTagName("li");
+            for (j = 0; j < liElements.length; j++) {
+                txtValue = liElements[j].textContent || liElements[j].innerText;
                 if (txtValue.toLowerCase().indexOf(filter) > -1) {
                     matchFound = true;
-                    break;  // No need to continue checking other <li> elements once a match is found
+                    liElements[j].style.display = "";  // Show the <li> if a match is found
+                } else {
+                    liElements[j].style.display = "none";  // Hide the <li> if no match
                 }
             }
         }
 
-        // Show or hide the details element based on whether a match was found
+        // Show or hide the entire <details> element based on matches within it
         if (matchFound) {
-            details[i].style.display = "";
+            details[i].style.display = "";  // Show the <details> if there's a match inside
         } else {
-            details[i].style.display = "none";
+            details[i].style.display = "none";  // Hide the <details> if no matches found
         }
     }
 }
