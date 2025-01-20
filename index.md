@@ -471,7 +471,7 @@ _For more information on our research and publications, visit [the SyNergy websi
 <!-- Inline JavaScript -->
 <script>
 function filterProjects() {
-    var searchQuery = this.value.toLowerCase(); // Get search input and convert it to lowercase
+    searchQuery = searchQuery.toLowerCase(); // Convert search query to lowercase
     var detailsBlocks = document.querySelectorAll('details'); // Select all <details> elements
 
     detailsBlocks.forEach(function(details) {
@@ -530,9 +530,8 @@ function highlightText(element, searchQuery) {
     element.innerHTML = element.textContent.replace(regex, '<span class="highlight">$1</span>'); // Wrap matched text in <span>
 }
 
-// Listen for input on the search field to filter projects
 document.getElementById('searchInput').addEventListener('input', function() {
-    filterProjects.call(this);  // Trigger the filtering when user types in the search input
+    filterProjects(this.value); // Pass the value directly to filterProjects
 });
 
 // Optional: Expand details block when the arrow is clicked
