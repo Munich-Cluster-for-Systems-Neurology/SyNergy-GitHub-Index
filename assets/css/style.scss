@@ -163,6 +163,7 @@ footer {
 }
 
 .highlight {
-    background-color: yellow;
-    font-weight: bold;
+    background-color: yellow; /* Highlight background */
+    color: inherit; /* Keep the original text color */
+    font-weight: bold; /* Optional: Make it bold */
 }
