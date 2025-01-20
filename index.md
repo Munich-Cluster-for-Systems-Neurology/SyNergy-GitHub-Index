@@ -470,7 +470,8 @@ _For more information on our research and publications, visit [the SyNergy websi
 <!-- Inline JavaScript -->
 <script>
 function filterProjects() {
-    var input, filter, container, details, h3, ul, li, i, j, txtValue, matchFound;
+    var input, filter, container, details, h3, ul, li, em, i, txtValue, matchFound;
+
     input = document.getElementById("searchBox");
     filter = input.value.toLowerCase();
     container = document.getElementById("projectsContainer");
@@ -480,38 +481,34 @@ function filterProjects() {
     for (i = 0; i < details.length; i++) {
         h3 = details[i].getElementsByTagName("h3")[0];
         ul = details[i].getElementsByTagName("ul")[0];
-        matchFound = false;
+        matchFound = false; // Track if any match is found in the current block
 
-        // Check h3 element
+        // Check if h3 matches the search query
         if (h3) {
             txtValue = h3.textContent || h3.innerText;
             if (txtValue.toLowerCase().indexOf(filter) > -1) {
                 matchFound = true;
-                h3.style.display = "";  // Show the <h3> if a match is found
-            } else {
-                h3.style.display = "none";  // Hide the <h3> if no match
             }
         }
 
-        // Check ul list items
+        // Check if any li elements within the ul match the search query
         if (ul) {
-            var liElements = ul.getElementsByTagName("li");
-            for (j = 0; j < liElements.length; j++) {
-                txtValue = liElements[j].textContent || liElements[j].innerText;
-                if (txtValue.toLowerCase().indexOf(filter) > -1) {
+            var liItems = ul.getElementsByTagName("li");
+            for (var j = 0; j < liItems.length; j++) {
+                em = liItems[j].getElementsByTagName("em")[0];
+                txtValue = liItems[j].textContent || liItems[j].innerText;
+                if (txtValue.toLowerCase().indexOf(filter) > -1 || (em && em.textContent.toLowerCase().indexOf(filter) > -1)) {
                     matchFound = true;
-                    liElements[j].style.display = "";  // Show the <li> if a match is found
-                } else {
-                    liElements[j].style.display = "none";  // Hide the <li> if no match
+                    break; // Exit loop as we've found a match in the list
                 }
             }
         }
 
-        // Show or hide the entire <details> element based on matches inside it
+        // Show or hide the block based on whether a match was found
         if (matchFound) {
-            details[i].style.display = "";  // Show the <details> if there's a match inside
+            details[i].style.display = "";
         } else {
-            details[i].style.display = "none";  // Hide the <details> if no matches found
+            details[i].style.display = "none";
         }
     }
 }
