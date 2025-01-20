@@ -10,7 +10,7 @@ _For more information on our research and publications, visit [the SyNergy websi
 
 ## Search Projects
 
-<input type="text" id="searchBox" placeholder="Search projects..." oninput="filterProjects()" style="width: 99%; padding: 10px; margin: 0px 0; font-size: 16px;">
+<input type="text" id="searchBox" placeholder="Search projects..." oninput="filterProjects()" style="width: 97%; padding: 10px; margin: 0px 0; font-size: 16px;">
 
 ---
 
@@ -469,21 +469,24 @@ _For more information on our research and publications, visit [the SyNergy websi
 
 <!-- Inline JavaScript -->
 <script>
+  // Add event listener for real-time filtering on input
+  document.getElementById("searchBox").addEventListener("input", filterProjects);
+
   function filterProjects() {
-    let input = document.getElementById('searchBox');
-    let filter = input.value.toLowerCase();
-    let projectsContainer = document.getElementById('projectsContainer');
-    let details = projectsContainer.getElementsByTagName('details');
+    const searchQuery = document.getElementById("searchBox").value.toLowerCase().trim();
+    const projects = document.querySelectorAll(".project");
+    
+    projects.forEach(function(project) {
+      // Get text content from both the <h2> and the <p> (or other relevant elements)
+      const summaryText = project.querySelector("summary h2").textContent.toLowerCase();
+      const projectDetails = project.querySelector("summary + p") ? project.querySelector("summary + p").textContent.toLowerCase() : '';
 
-    for (let i = 0; i < details.length; i++) {
-      let summary = details[i].getElementsByTagName('summary')[0];
-      let text = summary.innerText || summary.textContent;
-
-      if (text.toLowerCase().indexOf(filter) > -1) {
-        details[i].style.display = '';  // Show matching project
+      // Check if either the heading or the content includes the search query
+      if (summaryText.includes(searchQuery) || projectDetails.includes(searchQuery)) {
+        project.style.display = "block";
       } else {
-        details[i].style.display = 'none';  // Hide non-matching project
+        project.style.display = "none";
       }
-    }
+    });
   }
 </script>
