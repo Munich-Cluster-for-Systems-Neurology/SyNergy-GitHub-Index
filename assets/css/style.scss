@@ -5,165 +5,165 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 /* Custom styles */
+
+h1 a {
+    display: none;
+}
+
 body {
   background-color: #162c23;
-  padding: 50px;
-  font: 15px/1.5 "Roboto", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: #ffffff;
-  font-weight: 400;
+  padding:50px;
+  font: 15px/1.5 "Roboto", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif; /* font: 14px/1.5 "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif; */
+  color:#ffffff;
+  font-weight:400;
 }
 
 section {
-  background-color: #ffffff;
+  background-color: #ffffff; /* 0% transparency */ /*   earlier background-color: #e5e5e5 or rgba(229, 229, 229, 1); */
   padding: 20px;
-  width: 100%;
-  margin: 0 auto;
+  width: 120%;
+  margin-right: -360px; 
 }
 
 section p {
-  color: #3e4a45;
+    color: #3e4a45;   /* Changes the color of paragraphs within this section */
 }
 
 section p a {
-  float: right;
+    float: right;
 }
 
 section p em a {
-  position: relative;
-  float: none;
+    position: relative;
+    float: none;
 }
 
 section li::marker {
-  color: #3e4a45;
+    color: #3e4a45;   /* Changes the color of paragraphs within this section */
 }
 
 section strong {
-  color: #3e4a45;
+    color: #3e4a45;   /* Changes the color of paragraphs within this section */
 }
 
 section ul {
-  list-style-type: none;
-  padding-left: 0;
+  list-style-type: none;  /* Removes the default bullets */
+  padding-left: 0;        /* Optional: Removes default padding */
 }
 
 section hr {
-  border: 0;
-  height: 1px;
-  background-color: #d5d5d5;
-  margin: 20px auto;
+    border: 0;
+    height: 1px;
+    background-color: #d5d5d5; /* Custom color */
+    margin: 20px auto;          /* 20px auto - Center the line and add spacing */
 }
 
 section a {
-  color: #4a9476;
+    color: #4a9476;   /* Changes the color of paragraphs within this section */
 }
 
 details > summary {
-  list-style: none;
-  appearance: none;
-  cursor: pointer;
+  list-style: none;  /* Remove the default list-style arrow */
+  appearance: none;  /* Remove default browser-specific styles */
+  cursor: pointer;  /* Ensure the pointer cursor is displayed on hover */
 }
+
+/*
+.show-more {
+    display: none;
+ }
+
+.toggle-button {
+    display: block;
+    margin: 10px auto;
+    padding: 5px 15px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.toggle-button:hover {
+    background-color: #0056b3;
+}
+*/
 
 .arrow {
   display: inline-block;
   font-size: 0.75em;
   line-height: 1;
   transition: transform 0.2s ease;
-  cursor: pointer;
+  cursor: pointer; /* Ensure the arrow itself also has a pointer cursor */
   margin-right: 10px;
 }
 
+/* Rotate arrow on click */
 details[open] > summary .arrow {
-  transform: rotate(90deg);
+  transform: rotate(90deg); /* Rotates the arrow 90 degrees to point down */
 }
 
-/* Header styles */
 header {
-  margin-left: -360px;
-  margin-top: -20px;
-  width: 400px;
+    margin-left: -360px;
+    margin-top: -20px;
+    width: 400px;
 }
 
+/* Add padding for the logo */
 img[src="/SyNergy-GitHub-Index/assets/img/logo.png"] {
-  max-width: 150%;
-  display: inline-block;
+    max-width: 150%;
+    /*background-color: #e5e5e5;*/
+    display: inline-block; 
 }
 
 header p {
-  padding-top: 50px;
-  width: 405px;
-  line-height: 2;
+    padding-top: 50px;  /* Adjust this value as needed */
+    width: 405px;
+    line-height: 2; /* Adjust the value for more spacing between lines, e.g., 1.8 for 180% of font size */
 }
 
 header p.view {
-  display: none;
+    display: none;
 }
 
+/* Change heading color */
 h1 {
-  color: #162c23;
-  font-size: 25px;
-  font-weight: 700;
+    color: #162c23;  /* Replace with your desired heading color */
+    font-size:25px;
+    font-weight: 700; /* Use 'bold' for a thick appearance, bold is 700 */
 }
 
 h2 {
-  color: #4a9476;
-  font-size: 20px;
-  font-weight: 500;
-  margin: 20px 0;
+    color: #4a9476;  /* Replace with your desired heading color */
+    font-size:20px;
+    font-weight: 500; /* Use 'medium' for a less thick appearance, bold is 700 */
+    margin: 20px 0 20px 0;
 }
 
+/*
+    Change site title color 
+    h1.site-title {
+        color: #2c5444; Replace with your desired site title color
+    }
+*/
+
+/* Change link color */
 a {
-  color: #6ea991;
+    color: #6ea991; /* Replace with your desired link color */
 }
 
+/* Optional: Change link color on hover */
 a:hover {
-  color: #6ea991;
+    color: #6ea991; /* Replace with your desired hover color */
 }
 
 footer {
-  margin-left: -350px;
-  width: 405px;
+    margin-left: -350px;
+    width: 405px;
 }
 
 .highlight {
-  background-color: yellow;
-  color: inherit;
-  font-weight: bold;
-}
-
-/* Media query for screens with a maximum width of 768px */
-@media (max-width: 768px) {
-  body {
-    padding: 20px;
-    font-size: 14px;
-  }
-
-  section {
-    padding: 15px;
-    width: 90%;
-  }
-
-  header {
-    margin-left: 0;
-    margin-top: 0;
-    width: 100%;
-  }
-
-  header p {
-    padding-top: 20px;
-    width: 100%;
-    line-height: 1.5;
-  }
-
-  h1 {
-    font-size: 22px;
-  }
-
-  h2 {
-    font-size: 18px;
-  }
-
-  footer {
-    margin-left: 0;
-    width: 100%;
-  }
+    background-color: yellow; /* Highlight background */
+    color: inherit; /* Keep the original text color */
+    font-weight: bold; /* Optional: Make it bold */
 }
