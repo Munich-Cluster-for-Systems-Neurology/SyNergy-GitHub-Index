@@ -548,17 +548,17 @@ function removeHighlights(element) {
     element.innerHTML = element.innerHTML.replace(regex, '$1');
 }
 
-// Function to highlight matched text
+// Function to highlight matched text within an element, including nested <ul> and <li>
 function highlightText(element, searchQuery) {
     const regex = new RegExp(`(${searchQuery})`, 'gi'); // Case-insensitive match
-
+    
     // Loop through each child node of the element
     element.childNodes.forEach(node => {
         if (node.nodeType === Node.TEXT_NODE) {
             // If it's a text node, replace matching text
             const parent = node.parentNode;
             const highlightedText = node.textContent.replace(regex, '<span class="highlight">$1</span>');
-
+            
             // Replace the text node with the highlighted HTML content
             const wrapper = document.createElement('span');
             wrapper.innerHTML = highlightedText;
@@ -570,6 +570,12 @@ function highlightText(element, searchQuery) {
             }
         }
     });
+}
+
+// Reset the content and then highlight matching text
+function resetAndHighlightElement(element, searchQuery) {
+    element.innerHTML = element.textContent; // Reset the HTML content (clear previous highlights)
+    highlightText(element, searchQuery); // Apply the new highlights
 }
 
 // Add event listener to the search input
