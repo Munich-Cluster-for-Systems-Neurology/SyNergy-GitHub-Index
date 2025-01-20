@@ -8,8 +8,6 @@ _For more information on our research and publications, visit [the SyNergy websi
 
 <input type="text" id="searchInput" placeholder="Search projects..." oninput="filterProjects()" style="width: 97%; padding: 10px; margin: 20px 0px; font-size: 16px; color: #4a9476;">
 
----
-
 <div id="projectsContainer">
 <details>
   <summary>
