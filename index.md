@@ -471,6 +471,11 @@ _For more information on our research and publications, visit [the SyNergy websi
 <!-- Inline JavaScript -->
 <script>
 function filterProjects(searchQuery) {
+    if (!searchQuery) {
+        console.log("No search query provided!");
+        return; // Exit early if no search query
+    }
+
     searchQuery = searchQuery.toLowerCase(); // Convert search query to lowercase
     var detailsBlocks = document.querySelectorAll('details'); // Select all <details> elements
 
@@ -530,8 +535,8 @@ function highlightText(element, searchQuery) {
     element.innerHTML = element.textContent.replace(regex, '<span class="highlight">$1</span>'); // Wrap matched text in <span>
 }
 
-// Listen for input on the search field to filter projects
 document.getElementById('searchInput').addEventListener('input', function() {
+    console.log('Search input:', this.value); // Debugging log to check input value
     filterProjects(this.value); // Pass the value directly to filterProjects
 });
 
