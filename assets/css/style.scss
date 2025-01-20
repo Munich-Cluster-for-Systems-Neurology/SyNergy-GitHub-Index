@@ -85,16 +85,18 @@ details[open] > summary .arrow {
 }
 
 header {
-  margin-left: -360px;
-  margin-top: -20px;
-  width: 25%;
+  margin: 0 auto; /* Center the header horizontally */
+  margin-top: 20px; /* Add a small margin at the top */
+  width: 80%; /* Adjust the width for responsiveness */
+  max-width: 1200px; /* Ensure the header doesn't grow too wide on large screens */
   display: flex; /* Enable Flexbox */
   flex-direction: column; /* Stack header items vertically */
   justify-content: flex-start; /* Align header items at the top */
+  padding: 10px; /* Add padding to keep the content spaced out */
 }
 
 img[src="/SyNergy-GitHub-Index/assets/img/logo.png"] {
-    max-width: 150%;
+    max-width: 100%;
     display: inline-block;
 }
 
