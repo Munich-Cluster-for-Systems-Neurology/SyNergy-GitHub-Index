@@ -471,71 +471,75 @@ _For more information on our research and publications, visit [the SyNergy websi
 <!-- Inline JavaScript -->
 <script>
 function filterProjects(searchQuery) {
-    searchQuery = searchQuery.toLowerCase(); // Ensure the search query is in lowercase
+    if (!searchQuery) searchQuery = ''; // Ensure searchQuery is always defined
+    searchQuery = searchQuery.toLowerCase(); // Convert search query to lowercase
+
     const detailsBlocks = document.querySelectorAll('details'); // Select all <details> elements
 
     detailsBlocks.forEach((details) => {
-        const headings = details.querySelectorAll('h3'); // Select all <h3> elements in this <details>
-        const lists = details.querySelectorAll('ul'); // Select all <ul> elements in this <details>
+        const headings = details.querySelectorAll('h3'); // Select all <h3> elements
+        const lists = details.querySelectorAll('ul'); // Select all <ul> elements
         let matchFound = false; // Track whether there's a match within this <details> block
 
-        // Reset highlights for all headings and list items
-        headings.forEach((h3) => removeHighlights(h3));
-        lists.forEach((ul) => {
-            ul.querySelectorAll('li').forEach((li) => removeHighlights(li));
-        });
-
-        // Check matches and apply highlights
+        // Process all <h3> elements
         headings.forEach((h3) => {
+            removeHighlights(h3); // Clear previous highlights
+
             if (h3.textContent.toLowerCase().includes(searchQuery)) {
                 matchFound = true;
-                highlightText(h3, searchQuery); // Highlight matched text in <h3>
+                highlightText(h3, searchQuery); // Highlight matched text
+                h3.style.display = 'block'; // Ensure the <h3> is displayed
+            } else {
+                h3.style.display = 'none'; // Hide non-matching <h3>
             }
         });
 
+        // Process all <ul> elements and their <li> children
         lists.forEach((ul) => {
+            let ulMatch = false; // Track matches within this <ul>
+
             ul.querySelectorAll('li').forEach((li) => {
+                removeHighlights(li); // Clear previous highlights
+
                 if (li.textContent.toLowerCase().includes(searchQuery)) {
-                    matchFound = true;
-                    highlightText(li, searchQuery); // Highlight matched text in <li>
+                    ulMatch = true;
+                    highlightText(li, searchQuery); // Highlight matched text
+                    li.style.display = 'block'; // Ensure the <li> is displayed
+                } else {
+                    li.style.display = 'none'; // Hide non-matching <li>
                 }
             });
+
+            if (ulMatch) {
+                matchFound = true;
+                ul.style.display = 'block'; // Ensure the <ul> is displayed
+            } else {
+                ul.style.display = 'none'; // Hide non-matching <ul>
+            }
         });
 
-        // Show/hide details based on matches
+        // Expand/collapse <details> based on matches
         if (matchFound) {
-            details.setAttribute('open', 'open'); // Expand <details> if a match is found
+            details.setAttribute('open', 'open'); // Expand <details>
         } else {
-            details.removeAttribute('open'); // Collapse <details> if no matches
+            details.removeAttribute('open'); // Collapse <details>
         }
     });
 }
 
-// Function to highlight matched text within an element
+// Function to highlight matched text
 function highlightText(element, searchQuery) {
-    const regex = new RegExp(`(${searchQuery})`, 'gi'); // Match the search query (case-insensitive)
-    const content = element.textContent; // Get plain text (ignoring inner HTML)
-
-    // Replace matched text with a <span> while keeping other HTML intact
-    const highlightedHTML = content.replace(regex, '<span class="highlight">$1</span>');
-    element.innerHTML = highlightedHTML; // Safely inject the updated HTML
+    const regex = new RegExp(`(${searchQuery})`, 'gi'); // Case-insensitive match
+    element.innerHTML = element.textContent.replace(regex, '<span class="highlight">$1</span>'); // Add highlight span
 }
 
-// Function to remove any previous highlights
+// Function to remove any highlights
 function removeHighlights(element) {
-    // Find all <span> elements with the "highlight" class within the element
-    const highlights = element.querySelectorAll('span.highlight');
-
-    // Replace each highlighted span with its text content
-    highlights.forEach((highlight) => {
-        const parent = highlight.parentNode;
-        parent.replaceChild(document.createTextNode(highlight.textContent), highlight);
-    });
+    element.innerHTML = element.textContent; // Reset element to plain text
 }
 
-document.getElementById('searchInput').addEventListener('input', function() {
-    console.log('Search input:', this.value); // Debugging log to check input value
-    filterProjects(this.value); // Pass the value directly to filterProjects
+// Add event listener to search input
+document.getElementById('searchInput').addEventListener('input', function () {
+    filterProjects(this.value); // Pass the input value to the filterProjects function
 });
-
 </script>
