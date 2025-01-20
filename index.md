@@ -495,9 +495,8 @@ function filterProjects() {
         if (ul) {
             var liItems = ul.getElementsByTagName("li");
             for (var j = 0; j < liItems.length; j++) {
-                em = liItems[j].getElementsByTagName("em")[0];
                 txtValue = liItems[j].textContent || liItems[j].innerText;
-                if (txtValue.toLowerCase().indexOf(filter) > -1 || (em && em.textContent.toLowerCase().indexOf(filter) > -1)) {
+                if (txtValue.toLowerCase().indexOf(filter) > -1) {
                     matchFound = true;
                     break; // Exit loop as we've found a match in the list
                 }
@@ -506,9 +505,9 @@ function filterProjects() {
 
         // Show or hide the block based on whether a match was found
         if (matchFound) {
-            details[i].style.display = "";
+            details[i].style.display = "";  // Show the block if a match is found
         } else {
-            details[i].style.display = "none";
+            details[i].style.display = "none";  // Hide the block if no match
         }
     }
 }
