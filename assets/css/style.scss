@@ -85,10 +85,9 @@ details[open] > summary .arrow {
 }
 
 header {
-  margin: 0 auto; /* Center the header horizontally */
-  margin-top: 20px; /* Add a small margin at the top */
+  margin-top: -20px; /* Add a small margin at the top */
   width: 80%; /* Adjust the width for responsiveness */
-  max-width: 1200px; /* Ensure the header doesn't grow too wide on large screens */
+  max-width: 500px; /* Ensure the header doesn't grow too wide on large screens */
   display: flex; /* Enable Flexbox */
   flex-direction: column; /* Stack header items vertically */
   justify-content: flex-start; /* Align header items at the top */
