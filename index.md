@@ -6,12 +6,13 @@ Here you can explore GitHub repositories associated with SyNergy projects, and l
 
 _For more information on our research and publications, visit [the SyNergy website](https://synergy-munich.de/)._
 
----
+<hr>
+
 ## Search
 
 <input type="text" id="searchInput" placeholder="Search projects..." oninput="filterProjects()" style="width: 100%; padding: 10px; margin: 20px 0px; font-size: 16px; color: #3e4a45;">
 
----
+<hr>
 
 <div id="projectsContainer">
 <details>
