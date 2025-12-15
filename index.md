@@ -284,6 +284,19 @@ _For more information on our research and publications, visit [the SyNergy websi
       <a href="https://github.com/engelsdaniel/mitoproteomics">Python algorithm for the analysis of the EAE mitochondrial proteome</a>
     </li>
   </ul>
+  <hr>
+
+  <h3>Identification and validation of a tear fluid-derived protein biomarker signature in patients with amyotrophic lateral sclerosis</h3>
+  <p>
+    <a href="https://actaneurocomms.biomedcentral.com/articles/10.1186/s40478-025-02109-6">
+      <img src="assets/img/thumbnails/p6.png" alt="Thumbnail" />
+    </a>
+  </p>
+  <ul>
+    <li>
+      <a href="https://github.com/MendenLab/Tear-Fluid-Proteomics">R-based analysis of tear fluid proteomics</a>
+    </li>
+  </ul>
 </details>
 
 ---
@@ -397,8 +410,8 @@ _For more information on our research and publications, visit [the SyNergy websi
 
   <h3>MATLAB Tutorials</h3>
   <p>
-    <a href="https://de.mathworks.com/products/matlab.html?s_tid=hp_products_matlab">
-      <img src="assets/img/thumbnails/a2.png" alt="Thumbnail" />
+    <a href="https://www.cell.com/molecular-cell/fulltext/S1097-2765(25)00707-5">
+      <img src="assets/img/thumbnails/a2_v3.png" alt="Thumbnail" />
     </a>
   </p>
    <p>
