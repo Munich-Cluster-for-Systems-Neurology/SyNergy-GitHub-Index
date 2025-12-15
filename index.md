@@ -406,10 +406,25 @@ _For more information on our research and publications, visit [the SyNergy websi
     <li>
       <ul>
         <li>
-          <a href="https://github.com/csitron/MATLAB-Programs-for-Flow-Cytometry">MATLAB Programs for Flow Cytometry</a>
+          <a href="https://github.com/csitron/Microscopy_tif_Channel_Quant_MATLAB">Quantification of fluorescence channel area in TIFF images using MATLAB</a>
+        </li>
+        <li>
+          <a href="https://github.com/csitron/Microscopy_lif_Channel_Masked_Intensity_Quant_MATLAB">Quantification of masked fluorescence intensity and nuclear count from .lif files in MATLAB</a>
+        </li>
+        <li>
+          <a href="https://github.com/csitron/Microscopy_lif_Channel_Quant_MATLAB">Quantification of positive channel area in .lif image files in MATLAB</a>
+        </li>
+        <li>
+          <a href="https://github.com/csitron/Amino_acid_composition_and_hydrophobicity_analysis">Analysis of amino acid composition and hydrophobicity of test sequences from fasta files</a>
         </li>
         <li>
           <a href="https://github.com/csitron/Western-Blot-Quantification-in-MATLAB">Western Blot Quantification in MATLAB</a>
+        </li>
+        <li>
+          <a href="https://github.com/csitron/MATLAB-Programs-for-Flow-Cytometry">MATLAB Programs for Flow Cytometry</a>
+        </li>
+        <li>
+          <a href="https://github.com/csitron/Microscopy_lif_Adjust_MATLAB">Batch image adjustment of microscopy images in .lif format</a>
         </li>
       </ul>
     </li>
